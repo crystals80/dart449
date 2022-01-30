@@ -1,8 +1,21 @@
 /* main styles for examples */
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-x: hidden;
+  overflow-y: hidden, scroll; */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.overflow::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.overflow {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 body {
