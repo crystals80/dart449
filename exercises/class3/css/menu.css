@@ -16,14 +16,15 @@
 }
 
 .overlay {
-  position:relative;
-  height: 0;
+  position: relative;
+  height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 11;
+  padding: 5em;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0);
   overflow-x: hidden;
   transition: all 0.3s;
 }
@@ -33,7 +34,7 @@
   height: 100vh;
   display: flex;
   flex-flow: column wrap;
-	padding: 1em;
+  padding: 1em;
 }
 
 .overlay a {
@@ -41,44 +42,65 @@
   text-decoration: none;
   font-size: 42px;
   color: #ccc;
+  text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-	font-family: gotham, helvetica, sans-serif;
-  width: 100%;
-	margin-bottom: 1em;
+  font-family: gotham, helvetica, sans-serif;
   /* border: 1px solid red; */
-	transition: all 0.5s;
 }
 
 .overlay a:hover {
-	color:crimson;
+  color: crimson;
+}
+
+.overlay h1 {
+  color: #ccc;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: gotham, helvetica, sans-serif;
+  width: 100%;
+  margin-bottom: 1em;
+  transition: all 0.5s;
+}
+
+.overlay h2 {
+  color: #ccc;
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+  transition: all 0.5s;
 }
 
 .closebtn {
   position: absolute;
   z-index: 99;
-  top: 20px;
-  right: 20px;
-  font-size: 20px;
+  top: 75%;
+  left: 50%;
   cursor: pointer;
-	background: #fff;
-	outline:none;
-	border:none;
-  width:40px;
-	height: 40px;
-  text-decoration: none;
+  background: #fff;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  width: 50px;
+  height: 40px;
   color: #333;
+  text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
 }
 
 .closebtn:hover {
   color: #fff;
-	background: crimson;
+  background: crimson;
 }
 
 @media screen and (max-height: 450px) {
