@@ -6,15 +6,11 @@ const nav = document.querySelector('#myNav');
 const pDay = document.querySelector('#day');
 const pNight = document.querySelector('#night');
 
-openBtn.onclick = function() {
-  nav.style.height = '30vh';
+open.onclick = function() {
+  nav.style.height = '100vh';
 };
 
-closeBtn.onclick = function() {
-  nav.style.height = '0';
-};
-
-aLink.onclick = function() {
+close.onclick = function() {
   nav.style.height = '0';
 };
 
@@ -48,7 +44,7 @@ myBtn.onclick = function() {
 
 // (3) Add a point counter when elements are pressed
 
-const myDisplay = document.querySelector('#display');
+// const myDisplay = document.querySelector('#display'); already declared so no need to do so here
 const plusBtn = document.querySelector('#plus');
 const minusBtn = document.querySelector('#minus');
 
