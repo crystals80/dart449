@@ -1,0 +1,37 @@
+/* main styles for examples */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  background: #eee;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  font-family: gotham, helvetica, sans-serif;
+  font-size: 3em;
+}
+
+#day {
+  opacity: 1;
+  transition: all .3s;
+  /* position: relative;
+  top:0; */
+}
+
+.change {
+  /* top: 300px; */
+  transform: scale(.5) translateY(300px) rotate(-45deg);
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
