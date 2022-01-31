@@ -28,24 +28,26 @@ close.onclick = function() {
 // (2) Display text in an element
 
 const myDisplay = document.querySelector('#display');
-let myResult = document.querySelector('#result');
-const myBtn = document.querySelector('#prompt');
-const myResultBtn = document.querySelector('#trigger');
+const myResult = document.querySelector('#result');
 
 let counter = '0';
 let message = new Array("How many times did you eat today?", "How many times did you drink water today?", "How many times did you sigh today?", "How many times were you distracted today?", "How many times did you talk to people?", "How many times did you pet your pet?", "All right! Now let's take a look at your result!");
 console.log(message);
-let result = 'Who am I to judge? Live and enjoy!';
-console.log(result);
 
 // Add event to buttons
 myBtn.onclick = function() {
   myDisplay.textContent = message[counter++];
 };
-myResultBtn.onclick = function() {
-  myResult.textcontent = result;
-};
 
+
+// Not working and I don't know why...
+// const myBtn = document.querySelector('#prompt');
+// const myResultBtn = document.querySelector('#trigger');
+// let result = 'Who am I to judge? Live and enjoy!';
+// console.log(result);
+// myResultBtn.onclick = function() {
+//   myResult.textcontent = result;
+// };
 
 // (3) Add a point counter when elements are pressed
 

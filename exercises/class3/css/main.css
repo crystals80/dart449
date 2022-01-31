@@ -41,6 +41,10 @@ h1 {
   font-size: 2em;
 }
 
+h2 {
+  margin-bottom: 0;
+}
+
 #day {
   opacity: 1;
   transition: all .3s;
