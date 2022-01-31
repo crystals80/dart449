@@ -1,6 +1,13 @@
-/* === MY STYLES === */
+/* ===== MY CSS STYLES ===== */
 @import 'https://fonts.googleapis.com/css?family=Passion+One|Poiret+One';
 
+/* ===== COLOUR PALETTE ===== */
+/**********
+MY COLOURS
+Cream: #FFF5EC; Dark-Grey : #282828; Tan: #C27F66;
+COLOURS EXTRACTED OUT FROM HOMEPAGE BANNER
+Dull-Teal: #0A9EBF; Bright-Teal: #11C5D9; Orange-Brown: #A65233; Pink-Beige: #F2CBBD; Dark-Brown: #261B18;
+**********/
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +49,7 @@
   top: 23px;
   right: 27px;
   z-index: 9;
-  color: #FFFFFF;
+  color: #FFF5EC;
   font-weight: bold;
 }
 
@@ -53,8 +60,7 @@
   z-index: 101;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #282828;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -73,36 +79,39 @@
   text-decoration: none;
   font-family: 'Passion One', cursive;
   font-size: 90px;
-  color: #1d3480;
-  transition: all 0.5s;
-  writing-mode: sideways-lr;
+  color: #FFF5EC;
+  /* writing-mode: vertical-lr; */
   text-transform: uppercase;
   font-weight: normal;
   flex: 1 100%;
+  transition: all 0.5s;
 }
 
 .overlay a.one {
-  background: #6d8bcd;
+  background: #F2CBBD;
 }
 
 .overlay a.two {
-  background: #9492c8;
+  background: #C27F66;
 }
 
 .overlay a.three {
-  background: #cbb3c9;
+  background: #A65233;
 }
 
 .overlay a.four {
-  background: #f6bdc9;
+  background: #261B18;
 }
 
 .overlay a span {
   position: absolute;
   left: 50px;
-  bottom: 75px;
+  bottom: 20px;
+  transform: rotate(-90deg);
   transform-origin: left top;
   transition: all 0.5s ease-in-out;
+  /* left: 20px;
+		bottom: 0px; */
 }
 
 .closebtn {
@@ -116,7 +125,7 @@
   padding: 8px;
   text-decoration: none;
   font-family: 'Passion One', cursive;
-  color: #ffffff;
+  color: #FFF5EC;
   transition: all 0.3s;
   text-transform: uppercase;
 }
@@ -137,7 +146,7 @@
   font-family: 'Poiret One', cursive;
   font-size: 20px;
   line-height: 10px;
-  color: #eee;
+  color: #FFF5EC;
   font-weight: normal;
 }
 
@@ -146,12 +155,12 @@
   font-size: 48px;
   text-transform: uppercase;
   font-weight: normal;
-  color: #eee;
+  color: #FFF5EC;
 }
 
 /* ===== COLUMN LAYOUT ===== */
 .multi_art {
-  background: #fff;
+  background: #F2CBBD;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,14 +192,14 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background: #60706F;
+  background: #C27F66;
   min-height: 50vh;
   height: auto;
 }
 
 .figs figure {
   margin: 20px;
-  background: #A4C187;
+  background: #11C5D9;
   min-height: 300px;
   height: auto;
   position: relative;
@@ -198,7 +207,7 @@
 }
 
 .figs figure figcaption {
-  background: #fff;
+  background: #F2CBBD;
   padding: 10px 20px;
   position: absolute;
   bottom: 0;
@@ -208,11 +217,11 @@
 }
 
 .figs div {
-  background: #fff;
+  background: #FFF5EC;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   font-style: italic;
-  color: #181f3a;
+  color: #282828;
   padding: 10px 20px;
   position: absolute;
   bottom: 0;
@@ -221,8 +230,8 @@
   border-radius: 0 0 15px 15px;
 }
 
-.figs a, #s3 a:visited {
-  color: #181f3a;
+.figs a, .figs a:visited {
+  color: #282828;
   text-decoration: none;
 }
 
@@ -272,8 +281,8 @@
 
 /* ===== FOOTER ===== */
 footer {
-  background: #333;
-  color: #fff;
+  background: #261B18;
+  color: #FFF5EC;
   text-align: center;
   padding: 20px;
 }
