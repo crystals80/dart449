@@ -58,6 +58,10 @@ section {
   font-weight: bold;
 }
 
+#trigger:hover {
+  color: #A65233;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -90,6 +94,11 @@ section {
   font-weight: normal;
   flex: 1 100%;
   transition: all 0.5s;
+}
+
+.overlay a:hover, .overlay a:focus, .overlay a:visited:hover {
+  color: #261B18;
+  background: #0A9EBF;
 }
 
 .overlay a.one {
@@ -133,6 +142,10 @@ section {
   color: #FFF5EC;
   transition: all 0.3s;
   text-transform: uppercase;
+}
+
+.closebtn:hover {
+  color: #11C5D9;
 }
 
 /* ===== HOMEPAGE BANNER ===== */
@@ -304,7 +317,7 @@ footer {
   padding: 20px;
 }
 
-/* ===== EXERCISES PAGE ===== */
+/* ===== OTHER PAGES ===== */
 /* ===== TITLE HEADING ===== */
 #title-heading {
   background: #F2CBBD;
@@ -324,8 +337,8 @@ footer {
   animation: hvr-pulse-grow-horizontal 0.6s 2s linear infinite alternate;
 }
 
-/* ===== FLIP CARD ===== */
-#exercise {
+/* ===== REFLECTION FLIP CARD ===== */
+#reflection {
   background: #F2CBBD;
   display: flex;
   flex-flow: row wrap;
@@ -335,17 +348,17 @@ footer {
   padding-bottom: 50px;
 }
 
-#exercise img {
+#reflection img {
   width: 450px;
   border-radius: 10px;
 }
 
-#exercise a, #exercise a:visited {
+#reflection a, #reflection a:visited {
   color: #FFF5EC;
   text-decoration: none;
 }
 
-#exercise h1 {
+#reflection h1 {
   font-family: 'Passion One', cursive;
   font-size: 32px;
   line-height: 1.5em;
@@ -353,11 +366,68 @@ footer {
   color: #261B18;
 }
 
-#exercise p {
+#reflection p {
   font-family: 'Poiret One', cursive;
   color: #FFF5EC;
 }
 
+/* ===== EXERCISE FLIP CARD ===== */
+#exercise {
+  font-family: 'Poiret One', cursive;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #F2CBBD;
+  padding: 0 50px 30px 50px;
+}
+
+#exercise img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+#exercise a, #exercise a:visited {
+  font-weight: 600;
+  color: #261B18;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+#exercise h1 {
+  color: #F2CBBD;
+  font-size: 32px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+#exercise p {
+  color: #FFF5EC;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.overlay-flip-card {
+  font-family: 'Passion One', cursive;
+  position: absolute;
+  color: #F2CBBD;
+  text-align: center;
+  /* left: 109px; */
+  /* Black background with 0.5 opacity */
+  /* background: rgba(0, 0, 0, 0.5); */
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== FLIP CARD ===== */
 .flip-card {
   background-color: transparent;
   margin: 20px;
@@ -388,9 +458,10 @@ footer {
   border-radius: 10px;
 }
 
-/* .flip-card-front {
+.flip-card-front {
   color: #FFF5EC;
-} */
+}
+
 .flip-card-back {
   background-color: #A65233;
   color: #FFF5EC;

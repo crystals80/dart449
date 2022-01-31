@@ -6,25 +6,12 @@
   transform: scale(2);
 }
 
-#trigger:hover {
-  color: #A65233;
-}
-
-.overlay a:hover, .overlay a:focus, .overlay a:visited:hover {
-  color: #261B18;
-  background: #0A9EBF;
-}
-
 .overlay a span:hover, .overlay a span:focus, .overlay a span:active {
   transform: rotate(-90deg) perspective(2px) translateZ(0);
   transform-origin: left top;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   text-shadow: 0 0 20px #FFF5EC;
   animation: hvr-pulse-grow-vertical 0.6s linear infinite alternate;
-}
-
-.closebtn:hover {
-  color: #11C5D9;
 }
 
 /* ===== FIGURE CAPTION ===== */
