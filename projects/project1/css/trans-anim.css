@@ -1,4 +1,5 @@
-/* TRANSITIONS */
+/* ===== TRANSITIONS ===== */
+/* ===== LOGO AND NAVIGATION BAR ===== */
 #logo:hover {
   top: 3em;
   left: 3em;
@@ -10,7 +11,7 @@
 }
 
 .overlay a:hover, .overlay a:focus, .overlay a:visited:hover {
-  color: #282828;
+  color: #261B18;
   background: #0A9EBF;
 }
 
@@ -19,21 +20,24 @@
   transform-origin: left top;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   text-shadow: 0 0 20px #FFF5EC;
-  animation: hvr-pulse-grow 0.6s linear infinite alternate;
+  animation: hvr-pulse-grow-vertical 0.6s linear infinite alternate;
 }
 
 .closebtn:hover {
   color: #11C5D9;
 }
 
+/* ===== FIGURE CAPTION ===== */
 .figs p:hover {
   animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-/* .flip-card:hover .flip-card-inner {
+/* ===== FLIP-CARD ===== */
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-} */
-/* Underline From Center */
+}
+
+/* UNDERLINE FROM CENTER */
 .hvr-underline-from-center {
   display: block;
   vertical-align: middle;
@@ -174,15 +178,21 @@
   transform: translateY(0);
 }
 
-/* ANIMATIONS */
-/* Pulse Grow */
-@keyframes hvr-pulse-grow {
+/* ===== ANIMATIONS ===== */
+/* ===== Pulse Grow ===== */
+@keyframes hvr-pulse-grow-horizontal {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hvr-pulse-grow-vertical {
   to {
     transform: rotate(-90deg) perspective(2px) translateZ(0) scale(1.1);
   }
 }
 
-/* Tracking Contracted Out */
+/* ===== Tracking Contracted Out ===== */
 @keyframes tracking-out-contract {
   0% {
     opacity: 1
