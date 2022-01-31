@@ -179,7 +179,6 @@
 @keyframes hvr-pulse-grow {
   to {
     transform: rotate(-90deg) perspective(2px) translateZ(0) scale(1.1);
-    /* transform-origin: left top; */
   }
 }
 
