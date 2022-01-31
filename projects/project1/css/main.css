@@ -245,6 +245,7 @@ section {
   transition: all .5s ease;
 }
 
+/* ===== FIGURE-CAPTION BACKGROUND IMAGES ===== */
 #fig0 {
   height: auto;
   background: url(../images/steve-le-unsplash.jpg) fixed no-repeat center center;
