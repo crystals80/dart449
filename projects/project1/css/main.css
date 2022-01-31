@@ -245,6 +245,16 @@ section {
   transition: all .5s ease;
 }
 
+#fig0 {
+  height: auto;
+  background: url(../images/steve-le-unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
 #fig1 {
   height: auto;
   background: url(../images/thought-catalog-unsplash.jpg) fixed center center no-repeat;
