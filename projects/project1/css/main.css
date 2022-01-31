@@ -20,7 +20,8 @@
   /* Firefox */
 }
 
-/* phone view */
+/* PHONE LAYOUT */
+/* ===== LOGO ===== */
 #logo {
   position: absolute;
   left: 20px;
@@ -33,10 +34,11 @@
   height: 2em;
 }
 
+/* ===== HOMEPAGE BANNER ===== */
 .banner {
   width: 100%;
   height: 100vh;
-  background: url(../images/bg1.jpg) no-repeat center center;
+  background: url(../images/steve-le-unsplash.jpg) no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -60,6 +62,7 @@
   color: #eee;
 }
 
+/* ===== COLUMN LAYOUT ===== */
 .multi_art {
   background: #fff;
   display: flex;
@@ -87,6 +90,7 @@
   column-count: 1;
 }
 
+/*  ===== FIGURE-CAPTION LINKS ===== */
 .figs {
   display: flex;
   flex-flow: row wrap;
@@ -113,8 +117,73 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  border-radius: 15px;
 }
 
+.figs div {
+  background: #fff;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-style: italic;
+  color: #181f3a;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+}
+
+.figs a, #s3 a:visited {
+  color: #181f3a;
+  text-decoration: none;
+}
+
+.figs article p {
+  transition: all .5s ease;
+}
+
+#fig1 {
+  height: auto;
+  background: url(../images/thought-catalog-unsplash.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#fig2 {
+  height: auto;
+  background: url(../images/ales-nesetril-unsplash.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#fig3 {
+  height: auto;
+  background: url(../images/scott_graham_unsplash.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#fig4 {
+  height: auto;
+  background: url(../images/sky-wallpapercave.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* ===== FOOTER ===== */
 footer {
   background: #333;
   color: #fff;
