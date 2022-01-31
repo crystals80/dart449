@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DLKA - Personal Website</title>
+
+    <!-- CSS stylesheet(s) -->
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/trans-anim.css">
   </head>
 
   <body>
@@ -17,10 +20,10 @@
     <nav id="myNav" class="overlay">
       <span class="closebtn" id="close">×</span>
       <div class="overlay-content">
-        <a href="#" class="one"><span>About</span></a>
-        <a href="#" class="two"><span>Services</span></a>
-        <a href="#" class="three"><span>Clients</span></a>
-        <a href="#" class="four"><span>Contact</span></a>
+        <a href="home.html"><span>About</span></a>
+        <a href="readings.html"><span>Readings</span></a>
+        <a href="assignments.html"><span>Assignments</span></a>
+        <a href="projects.html"><span>Projects</span></a>
       </div>
     </nav>
 
@@ -28,14 +31,14 @@
 
     <header class="banner">
       <hgroup>
-        <h2>Personal Website of</h2>
-        <h1>Lam Ky Anh Do</h1>
+        <h2 class="slide-up show-on-scroll">Personal Website of</h2>
+        <h1 class="slide-up-slower show-on-scroll">Lam Ky Anh Do</h1>
       </hgroup>
     </header>
 
     <section class="multi_art">
-      <article class="multi">
-        <h1>A Little Bit about Me</h1>
+      <article class="multi slide-up show-on-scroll">
+        <h1 class="slide-left show-on-scroll">A Little Bit about Me</h1>
         <p>Hello again! This is my new personal website for DART 449. If you want to check out the similarities or differences between then and now, check out my old <a href="">homepage (yet to appear)</a>!</p>
         <p>My name is <strong>Lam Ky Anh Do</strong>, but I go by <strong><em>Falé</em></strong>. It's easier to remember, and I am currently a third-year Design student at Concordia University!</p>
         <p>Born and raised in Ho Chi Minh, Vietnam, I moved to Montreal at the age of 8 for a new adventure with my family, who you can discover more in the previous version of this website. From a very young age, my education was highly academic,
@@ -55,23 +58,43 @@
     </section>
 
     <section class="figs">
-      <figure>
-        <figcaption>Reading Reflections
+      <figure id="fig1">
+        <figcaption class="slide-up show-on-scroll">
+          <div>
+            <a href="Falé_Do_Assignment2_Midterm\midterm.html">
+              <p>Reading Reflections</p>
+            </a>
+          </div>
         </figcaption>
       </figure>
 
-      <figure>
-        <figcaption>Assignments
+      <figure id="fig2">
+        <figcaption class="slide-up show-on-scroll">
+          <div>
+            <a href="Falé_Do_Assignment2_Midterm\midterm.html">
+              <p>Assignments</p>
+            </a>
+          </div>
         </figcaption>
       </figure>
 
-      <figure>
-        <figcaption>Projects
+      <figure id="fig3">
+        <figcaption class=" slide-up show-on-scroll">
+          <div>
+            <a href="Falé_Do_Assignment2_Midterm\midterm.html">
+              <p>Projects</p>
+            </a>
+          </div>
         </figcaption>
       </figure>
 
-      <figure>
-        <figcaption> DART 349 Personal Website
+      <figure id="fig4">
+        <figcaption class="slide-up show-on-scroll">
+          <div>
+            <a href="Falé_Do_Assignment2_Midterm\midterm.html">
+              <p>DART 349 Personal Website</p>
+            </a>
+          </div>
         </figcaption>
       </figure>
     </section>
@@ -81,6 +104,9 @@
       <p class="slide-left-slowest show-on-scroll">Design and Computional Arts Faculty of Concordia University</p>
     </footer>
 
+    <!-- Javascript script(s) -->
+    <script src="js/menu.js"></script>
+    <script src="js/show-on-scroll.js"></script>
 
   </body>
 
