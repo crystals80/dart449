@@ -150,6 +150,7 @@ section {
 
 /* ===== HOMEPAGE BANNER ===== */
 .banner {
+  color: #FFF5EC;
   /* width: 100%; */
   min-height: 100vh;
   height: auto;
@@ -166,15 +167,32 @@ section {
   font-size: 48px;
   text-transform: uppercase;
   font-weight: normal;
-  color: #FFF5EC;
 }
 
 .banner h2 {
   font-family: 'Poiret One', cursive;
   font-size: 20px;
   line-height: 10px;
-  color: #FFF5EC;
   font-weight: normal;
+  padding-bottom: .25em;
+}
+
+/* ===== READING REFLECTIONS PAGE BANNER ===== */
+.reading {
+  background: url(../images/thought-catalog-unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+}
+
+/* ===== EXERCISES PAGE BANNER ===== */
+.exercise {
+  background: url(../images/ales-nesetril-unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+}
+
+/* ===== PROJECTS PAGE BANNER ===== */
+.project {
+  background: url(../images/scott_graham_unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
 }
 
 /* ===== COLUMN LAYOUT ===== */
@@ -193,7 +211,7 @@ section {
   font-family: 'Passion One', cursive;
   font-size: 36px;
   text-transform: uppercase;
-  color: #333;
+  color: #261B18;
   font-weight: normal;
 }
 
