@@ -9,7 +9,7 @@
   color: #A65233;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus, .overlay a:visited:hover {
   color: #282828;
   background: #0A9EBF;
 }
@@ -26,10 +26,6 @@
   color: #11C5D9;
 }
 
-/*
-.manual-btn:hover {
-  background: #9492c8;
-} */
 .figs p:hover {
   animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -182,7 +178,8 @@
 /* Pulse Grow */
 @keyframes hvr-pulse-grow {
   to {
-    transform: scale(1.1);
+    transform: rotate(-90deg) perspective(2px) translateZ(0) scale(1.1);
+    /* transform-origin: left top; */
   }
 }
 
