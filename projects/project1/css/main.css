@@ -65,7 +65,7 @@ section {
   z-index: 101;
   top: 0;
   left: 0;
-  background-color: #282828;
+  background-color: #261B18;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -227,7 +227,7 @@ section {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   font-style: italic;
-  color: #282828;
+  color: #261B18;
   padding: 10px 20px;
   position: absolute;
   bottom: 0;
@@ -237,7 +237,7 @@ section {
 }
 
 .figs a, .figs a:visited {
-  color: #282828;
+  color: #261B18;
   text-decoration: none;
 }
 
@@ -302,6 +302,105 @@ footer {
   color: #FFF5EC;
   text-align: center;
   padding: 20px;
+}
+
+/* ===== EXERCISES PAGE ===== */
+/* ===== TITLE HEADING ===== */
+#title-heading {
+  background: #F2CBBD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+}
+
+#title-heading h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #261B18;
+  text-align: center;
+  transition: all 1s ease;
+  animation: hvr-pulse-grow-horizontal 0.6s 2s linear infinite alternate;
+}
+
+/* ===== FLIP CARD ===== */
+#exercise {
+  background: #F2CBBD;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  ;
+  padding-bottom: 50px;
+}
+
+#exercise img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+#exercise a, #exercise a:visited {
+  color: #FFF5EC;
+  text-decoration: none;
+}
+
+#exercise h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 32px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #261B18;
+}
+
+#exercise p {
+  font-family: 'Poiret One', cursive;
+  color: #FFF5EC;
+}
+
+.flip-card {
+  background-color: transparent;
+  margin: 20px;
+  width: 450px;
+  height: 254px;
+  flex: 1 auto;
+}
+
+.flip-card-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+/* .flip-card-front {
+  color: #FFF5EC;
+} */
+.flip-card-back {
+  background-color: #A65233;
+  color: #FFF5EC;
+  padding: 75px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
 }
 
 /* ===== TABLET LAYOUT ===== */
