@@ -34,14 +34,9 @@
   animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-}
-
-/* .flip-card-:hover .flip-card-inner- {
-  transform: rotateY(180deg); */
-}
-
+} */
 /* Underline From Center */
 .hvr-underline-from-center {
   display: block;

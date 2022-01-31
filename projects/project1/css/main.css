@@ -27,6 +27,11 @@ Dull-Teal: #0A9EBF; Bright-Teal: #11C5D9; Orange-Brown: #A65233; Pink-Beige: #F2
   /* Firefox */
 }
 
+section {
+  position: relative;
+  padding: 20px;
+}
+
 /* PHONE LAYOUT */
 /* ===== LOGO ===== */
 #logo {
@@ -132,22 +137,15 @@ Dull-Teal: #0A9EBF; Bright-Teal: #11C5D9; Orange-Brown: #A65233; Pink-Beige: #F2
 
 /* ===== HOMEPAGE BANNER ===== */
 .banner {
-  width: 100%;
-  height: 100vh;
-  background: url(../images/steve-le-unsplash.jpg) no-repeat center center;
+  /* width: 100%; */
+  min-height: 100vh;
+  height: auto;
+  background: url(../images/steve-le-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.banner h2 {
-  font-family: 'Poiret One', cursive;
-  font-size: 20px;
-  line-height: 10px;
-  color: #FFF5EC;
-  font-weight: normal;
 }
 
 .banner h1 {
@@ -156,6 +154,14 @@ Dull-Teal: #0A9EBF; Bright-Teal: #11C5D9; Orange-Brown: #A65233; Pink-Beige: #F2
   text-transform: uppercase;
   font-weight: normal;
   color: #FFF5EC;
+}
+
+.banner h2 {
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  line-height: 10px;
+  color: #FFF5EC;
+  font-weight: normal;
 }
 
 /* ===== COLUMN LAYOUT ===== */
