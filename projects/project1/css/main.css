@@ -32,7 +32,7 @@ section {
   padding: 20px;
 }
 
-/* PHONE LAYOUT */
+/* ===== PHONE LAYOUT (NOT RECOMMENDED)===== */
 /* ===== LOGO ===== */
 #logo {
   position: absolute;
@@ -87,7 +87,7 @@ section {
   padding: 0px;
   text-decoration: none;
   font-family: 'Passion One', cursive;
-  font-size: 90px;
+  font-size: 50px;
   color: #FFF5EC;
   /* writing-mode: vertical-lr; */
   text-transform: uppercase;
@@ -119,8 +119,8 @@ section {
 
 .overlay a span {
   position: absolute;
-  left: 50px;
-  bottom: -50px;
+  left: 25px;
+  bottom: 0px;
   transform: rotate(-90deg);
   transform-origin: left top;
   transition: all 0.5s ease-in-out;
@@ -347,10 +347,11 @@ footer {
 
 #title-heading h1 {
   font-family: 'Passion One', cursive;
-  font-size: 50px;
+  font-size: 28px;
   text-transform: uppercase;
   color: #261B18;
   text-align: center;
+  padding: 0 .25em;
   transition: all 1s ease;
   animation: hvr-pulse-grow-horizontal 0.6s 2s linear infinite alternate;
 }
@@ -483,7 +484,7 @@ footer {
 .flip-card-back {
   background-color: #A65233;
   color: #FFF5EC;
-  padding: 75px;
+  padding: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -492,16 +493,18 @@ footer {
   transform: rotateY(180deg);
 }
 
-/* ===== TABLET LAYOUT ===== */
+/* ===== TABLET LAYOUT (NOT RECOMMENDED) ===== */
 /* 481px to 768px. Inherits styles from: Mobile Layout. */
 @media only screen and (min-width: 481px) {
-  .hero h2 {
+  .banner h2 {
     font-size: 30px;
     line-height: 15px;
+    padding: .5em;
   }
 
-  .hero h1 {
+  .banner h1 {
     font-size: 72px;
+    line-height: 1em;
   }
 
   .multi {
@@ -513,12 +516,31 @@ footer {
   }
 }
 
-/* ===== DESKTOP LAYOUT ===== */
+/* ===== DESKTOP LAYOUT (RECOMMENDED) ===== */
 /* Desktop Layout: 769px to a max of 1200px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 769px) {
   #logo img {
     width: auto;
     height: 3em;
+  }
+
+  .overlay a, .overlay a:visited {
+    position: relative;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Passion One', cursive;
+    font-size: 90px;
+    color: #FFF5EC;
+    /* writing-mode: vertical-lr; */
+    text-transform: uppercase;
+    font-weight: normal;
+    flex: 1 100%;
+    transition: all 0.5s;
+  }
+
+  .overlay a span {
+    left: 50px;
+    bottom: -50px;
   }
 
   .banner h2 {
@@ -528,5 +550,14 @@ footer {
 
   .banner h1 {
     font-size: 96px;
+  }
+
+  #title-heading h1 {
+    font-size: 50px;
+    padding: auto;
+  }
+
+  .flip-card-back {
+    padding: 75px;
   }
 }
