@@ -36,13 +36,13 @@ const feelingNotGoodBtn = document.querySelector('#notGood');
 let reply = document.querySelector('#reply');
 console.log(reply);
 
-feelingGoodBtn.onclick = function() {
+feelingGoodBtn.addEventListener('click', function() {
   reply.textContent = `Nice! It's a beautiful day! Let's enjoy it!`;
-};
+});
 
-feelingNotGoodBtn.onclick = function() {
+feelingNotGoodBtn.addEventListener('click', function() {
   reply.textContent = `Oh no! ${userData.name}, don't worry, be happy! Things will get better soon!`;
-};
+});
 
 // (4) Add a randomized answer to howAreYouBtn and display howAreYouAnswer
 const submitQuestion = document.querySelector('#howAreYouBtn');
