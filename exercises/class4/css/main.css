@@ -20,12 +20,15 @@
 
 body {
   font-size: 18px;
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite; */
+  background: white;
   height: 100vh;
 }
 
+/* .changeColour {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+} */
 section {
   width: 100%;
   height: auto;
@@ -74,14 +77,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* .change { */
-/* top: 300px; */
-/*  transform: scale(.5) translateY(300px) rotate(-45deg);
-  border-radius: 50%;
-  filter: grayscale(100%);
-}
-
-@keyframes gradient {
+/* @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -93,4 +89,4 @@ input[type=submit] {
   100% {
     background-position: 0% 50%;
   }
-}*/
+} */

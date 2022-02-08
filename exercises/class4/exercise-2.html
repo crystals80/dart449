@@ -11,47 +11,44 @@
 
   <body>
 
-    <body>
+    <section>
+      <h1 id="welcome">Hello and welcome Stranger!</h1>
+      <h2>How are you today?</h2>
 
-      <section>
-        <h1 id="welcome">Hello and welcome Stranger!</h1>
-        <h2>How are you today?</h2>
+      <div>
+        <label for="border">I am feeling</label>
+        <button id="good" class="border">great!</button>
+        <button id="notGood" class="border">not so good...</button>
+
+      </div>
+      <p id="reply"></p>
+
+      <div>
+        <button id="howAreYouBtn" class="border center">What about you?</button>
+      </div>
+      <p id="howAreYouAnswer"></p>
+    </section>
+
+    <section>
+      <div id="fortuneTopic" style="visibility: hidden">
+        <h1>Well, then let me tell you your fortune!</h1>
+        <h2>Are you ready?</h2>
+        <p>Please choose a between 1 to 10 and I'll be able to tell something intriguing!</p>
 
         <div>
-          <label for="border">I am feeling</label>
-          <button id="good" class="border">great!</button>
-          <button id="notGood" class="border">not so good...</button>
-
-        </div>
-        <p id="reply"></p>
-
-        <div>
-          <button id="howAreYouBtn" class="border center">What about you?</button>
-        </div>
-        <p id="howAreYouAnswer"></p>
-      </section>
-
-      <section>
-        <div id="fortuneTopic" style="visibility: hidden">
-          <h1>Well, then let me tell you your fortune!</h1>
-          <h2>Are you ready?</h2>
-          <p>Please choose a between 1 to 10 and I'll be able to tell something intriguing!</p>
-
           <div>
-            <div>
-              Enter a number: <input type="text" id="enterNumber">
-              <button id="tellFortune">Tell me my fortune!</button>
-            </div>
-
-
-            <p id="fortune"></p>
+            Enter a number: <input type="text" id="enterNumber">
+            <button id="tellFortune">Tell me my fortune!</button>
           </div>
 
-        </div>
-      </section>
 
-    </body>
-    <script src="js/script.js"></script>
+          <p id="fortune"></p>
+        </div>
+
+      </div>
+    </section>
+
   </body>
+  <script src="js/script.js"></script>
 
 </html>

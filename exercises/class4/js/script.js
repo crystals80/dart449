@@ -22,19 +22,30 @@ if (data != null) {
 const myDisplay = document.querySelector('#welcome');
 myDisplay.textContent = `Hello and welcome ${userData.name}!`;
 
-const myBtn = document.querySelector('#changer');
-
 // (3) Display a reply when user answers using button
 const feelingGoodBtn = document.querySelector('#good');
 const feelingNotGoodBtn = document.querySelector('#notGood');
 let reply = document.querySelector('#reply');
-console.log(reply);
+
+// (3.5) Set happy/sad/gradient background using colour
+const happyBg = document.querySelector('body');
+let bright = 'linear-gradient(120deg, #f6d365 0%, #fda085 100%)'; // Yellow-orange
+const sadBg = document.querySelector('body');
+let dark = 'linear-gradient(to top, #7879FF 0%, #4428bc 100%)'; // Purple-blue
+const gradientBg = document.querySelector('body');
+let multicolour = 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)';
 
 feelingGoodBtn.addEventListener('click', function() {
+  happyBg.addEventListener('click', function() {
+    document.body.style.background = bright;
+  })
   reply.textContent = `Nice! It's a beautiful day! Let's enjoy it!`;
 });
 
 feelingNotGoodBtn.addEventListener('click', function() {
+  sadBg.addEventListener('click', function() {
+    document.body.style.background = dark;
+  })
   reply.textContent = `Oh no! ${userData.name}, don't worry, be happy! Things will get better soon!`;
 });
 
@@ -53,6 +64,11 @@ function howAreYou() {
   let i = (Math.random() * messages.length) | 0;
   answer.innerText = messages[i];
 
+  gradientBg.addEventListener('click', function() {
+    document.body.style.background = multicolour;
+    gradientBg.classList.toggle('changeColour');
+  })
+
   initiatePrompt();
 }
 
@@ -67,13 +83,12 @@ function initiatePrompt() {
 }
 
 function nextPrompt() {
-  // fortuneTopic.textContent = `Well, then let me tell you your fortune!`
   document.getElementById('fortuneTopic').style.visibility = 'visible';
   // document.getElementById('fortuneBtn').style.display = 'inline'; // Don't need since there is a visibility control with #fortuneTopic
   generateFortune();
 }
 
-// (6) Load JSON file for fortune-telling prompts
+// (6) Add answers for fortune-telling prompts
 const fortune = document.querySelector('#fortune');
 let number;
 const tellFortune = document.querySelector('#tellFortune');
