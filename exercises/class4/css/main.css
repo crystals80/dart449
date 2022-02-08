@@ -29,7 +29,8 @@ body {
 section {
   width: 100%;
   height: auto;
-  padding: 5em 2.5em;
+  padding: 2.5em;
+  text-align: center;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -41,10 +42,6 @@ h1 {
   font-size: 2em;
 }
 
-h2 {
-  margin-bottom: 0;
-}
-
 input[type=text] {
   width: 25%;
   border: none;
@@ -53,19 +50,21 @@ input[type=text] {
   margin-right: 1em;
 }
 
-#howAreYouBtn {
+input[type=submit] {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 2px 2px;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+/* BUTTON CUSTOMIZATION */
+.center {
   top: 50%;
   left: 50%;
   /* -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
-}
-
-#good {
-  margin: 0 1em;
-}
-
-#notGood {
-  margin-right: 1em;
 }
 
 .border {

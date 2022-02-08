@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exercise 2: Using Functions, Conditional Statements and AddEventListeners</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/menu.css">
   </head>
 
   <body>
@@ -19,36 +18,37 @@
         <h2>How are you today?</h2>
 
         <div>
-          <p>I am feeling
-            <button id="good" class="border">great!</button>
-            <button id="notGood" class="border">not so good...</button>
-          </p>
+          <label for="border">I am feeling</label>
+          <button id="good" class="border">great!</button>
+          <button id="notGood" class="border">not so good...</button>
+
         </div>
-        <p id="reply" style="margin-top: 0;"></p>
+        <p id="reply"></p>
 
         <div>
-          <button id="howAreYouBtn" class="border">What about you?</button>
+          <button id="howAreYouBtn" class="border center">What about you?</button>
         </div>
         <p id="howAreYouAnswer"></p>
       </section>
 
       <section>
-        <div>
-          <h1></h1>
+        <div id="fortuneTopic" style="visibility: hidden">
+          <h1>Well, then let me tell you your fortune!</h1>
+          <h2>Are you ready?</h2>
+          <p>Please choose a between 1 to 10 and I'll be able to tell something intriguing!</p>
+
+          <div>
+            <div>
+              Enter a number: <input type="text" id="enterNumber">
+              <button id="tellFortune">Tell me my fortune!</button>
+            </div>
+
+
+            <p id="fortune"></p>
+          </div>
+
         </div>
       </section>
-
-      <div class="form">
-        <label for="guessField">Enter a guess: </label>
-        <input type="text" id="guessField" class="guessField">
-        <input type="submit" value="Submit guess" class="guessSubmit">
-      </div>
-
-      <div class="resultParas">
-        <p class="guesses"></p>
-        <p class="lastResult"></p>
-        <p class="lowOrHi"></p>
-      </div>
 
     </body>
     <script src="js/script.js"></script>

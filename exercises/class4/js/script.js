@@ -22,12 +22,6 @@ if (data != null) {
 const myDisplay = document.querySelector('#welcome');
 myDisplay.textContent = `Hello and welcome ${userData.name}!`;
 
-let message = 'first message';
-console.log(message);
-message = 'second message';
-message = 'this is a new message';
-
-
 const myBtn = document.querySelector('#changer');
 
 // (3) Display a reply when user answers using button
@@ -58,4 +52,59 @@ console.log(messages);
 function howAreYou() {
   let i = (Math.random() * messages.length) | 0;
   answer.innerText = messages[i];
+
+  initiatePrompt();
+}
+
+// (5) Show an fortune-telling prompt after a delay of 3 seconds
+const fortuneTopic = document.querySelector('#fortuneTopic');
+// document.getElementById('fortuneBtn').style.display = 'none'; // Don't need since there is a visibility control with #fortuneTopic
+
+function initiatePrompt() {
+  setTimeout(() => {
+    nextPrompt()
+  }, 3000);
+}
+
+function nextPrompt() {
+  // fortuneTopic.textContent = `Well, then let me tell you your fortune!`
+  document.getElementById('fortuneTopic').style.visibility = 'visible';
+  // document.getElementById('fortuneBtn').style.display = 'inline'; // Don't need since there is a visibility control with #fortuneTopic
+  generateFortune();
+}
+
+// (6) Load JSON file for fortune-telling prompts
+const fortune = document.querySelector('#fortune');
+let number;
+const tellFortune = document.querySelector('#tellFortune');
+
+tellFortune.addEventListener('click', generateFortune);
+
+function generateFortune() {
+  number = document.querySelector('#enterNumber').value;
+  console.log(number);
+
+  if (number === '1') {
+    fortune.innerText = 'Watch for new projects and new beginnings';
+  } else if (number === '2') {
+    fortune.innerText = `Something new comes your way; go for it`;
+  } else if (number == '3') {
+    fortune.innerText = `A mysterious woman arrives`;
+  } else if (number === '4') {
+    fortune.innerText = `Beware a tendency toward addiction`;
+  } else if (number == '5') {
+    fortune.innerText = `Someone knows more than he or she will reveal`;
+  } else if (number === '6') {
+    fortune.innerText = `An opportunity to be involved in luxurious sexuality is coming`;
+  } else if (number == '7') {
+    fortune.innerText = `Expect discipline or correction in the near future`;
+  } else if (number === '8') {
+    fortune.innerText = `Pray for forgiveness and confess wrongdoings`;
+  } else if (number == '9') {
+    fortune.innerText = `A new personal or professional relationship blossoms`;
+  } else if (number == '10') {
+    fortune.innerText = `Beware the jealousy of others`;
+  } else {
+    fortune.innerText = `Your fortune will be revealed soon...`;
+  }
 }
