@@ -1,4 +1,4 @@
-/* main styles for examples */
+/* Main Stylesheet */
 * {
   box-sizing: border-box;
   /* overflow-x: hidden;
@@ -18,12 +18,14 @@
   /* Firefox */
 }
 
+/* LAYOUT CUSTOMIZATION */
 body {
   font-size: 18px;
   background: white;
   height: 100vh;
 }
 
+/* Gradient Background */
 /* .changeColour {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -32,7 +34,7 @@ body {
 section {
   width: 100%;
   height: auto;
-  padding: 2.5em;
+  padding: 2em 2.5em 1em 2.5em;
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
@@ -40,15 +42,18 @@ section {
   align-items: center;
 }
 
+/* TEXT CUSTOMIZATION */
 h1 {
   font-family: gotham, helvetica, sans-serif;
   font-size: 2em;
 }
 
+/* FORM CUSTOMIZATION */
 input[type=text] {
   width: 25%;
   border: none;
   border-bottom: 1px solid black;
+  background: transparent;
   padding: 2px 2px;
   margin-right: 1em;
 }
@@ -71,12 +76,14 @@ input[type=submit] {
 }
 
 .border {
-  border: 1px solid black;
+  border: none;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: .5em;
   cursor: pointer;
 }
 
+/* ANIMATION */
 /* @keyframes gradient {
   0% {
     background-position: 0% 50%;
