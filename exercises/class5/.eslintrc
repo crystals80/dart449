@@ -1,0 +1,21 @@
+{
+
+    "extends":[
+      "rallycoding"
+    ],
+    "env": {
+          "browser": true,
+          "node": true
+      },
+    "rules": {
+        "no-unused-vars":"off",
+        "comma-spacing":"off",
+        "padded-blocks":"off",
+        "block-spacing":"off",
+        "space-before-blocks":"off",
+        "space-before-function-paren":"off",
+        "eqeqeq": "error",
+        "curly": "error",
+        "arrow-body-style": 0
+    }
+}
