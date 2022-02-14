@@ -1,3 +1,10 @@
+/**********
+Exercise 1: Using Query Selectors, On-click Functions, Variable Declarations (let/const) and TextContent
+Lam Ky Anh Do
+
+Use query selectors, on-click funstions to create an simple HTML web page with a customized navigation bar (game simulation).
+**********/
+
 // (1) Have an HTML element that is being manipulated with JS (i.e.menu)
 
 // Declare the variables
