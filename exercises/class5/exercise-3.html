@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
 
-  <body class="hockey">
+  <body class="bg">
     <section>
-      <article class="message">
-        <h1 id="welcomeMsg">Welcome to the Bell Center!</h1>
-        <p style="margin-bottom: 0.5em">Did you know that it was formerly known as Molson Center at the time?</p>
+      <article>
+
+        <h1 id="welcomeMsg">Welcome to the Skyscraper Bell Center!</h1>
+        <p style="margin-bottom: 0.25em">This is an upgraded arena that floats around Montreal hosting wonderful events on a whole new level!</p>
+        <p style="margin-bottom: 1em">Did you know that it was formerly known as Molson Center at the time?</p>
         <p style="margin-bottom: 2em">Anyhow, I assume you are here to assist tonight's game?</p>
 
         <div>
@@ -21,16 +23,63 @@
           <button id="no" class="border">Err...no?</button>
           <button id="wait" class="border" style="display: none">Wait! Erm..excuse me!</button>
         </div>
-        <p id="reply"></p>
+        <h2 id="reply"></h2>
+
       </article>
     </section>
 
     <section id="team" style="visibility: hidden">
       <article>
 
+        <h1>The Qualification Matches</h1>
+        <p style="margin-bottom: 1em">Featuring February Madness special event, the NHL has decided to host several Hockey matches simultaneously.</p>
+        <p style="margin-bottom: 0.25em">As the Pittsburgh Penguins won last week's qualification rounds for the Metropolitan Division of the Eastern Conference,</p>
+        <p style="margin-bottom: 1em"> It is the Atlantic Division's turn to get that spot in the quarter-final!</p>
+        <p style="margin-bottom: 1em">The score of each team matters, but your vote has the final word!</p>
+        <p style="margin-bottom: 1em; font-style: italic">Choose carefully as there is only one team who can go through!</p>
+
+        <div>
+          <button id="one" class="hockeyTeam border">Boston Bruins</button>
+          <button id="two" class="hockeyTeam border">Buffalo Sabres</button>
+          <button id="three" class="hockeyTeam border">Detroit Red Wings</button>
+          <button id="four" class="hockeyTeam border">Florida Panthers</button>
+        </div>
+
+        <div>
+          <button id="five" class="hockeyTeam border">Montreal Canadiens</button>
+          <button id="six" class="hockeyTeam border">Ottawa Senators</button>
+          <button id="seven" class="hockeyTeam border">Tampa Bay Lightning</button>
+          <button id="eight" class="hockeyTeam border">Toronto Maple Leaf</button>
+        </div>
+
+        <h2>Your Team(s)</h2>
+        <div class="match">
+          <div>
+            <p id="displayHockeyTeams"></p>
+          </div>
+
+      </article>
+
+      <article class="sub-article">
+
+        <h2>Enjoy the games!</h2>
+        <p id="pointsDisplay">Total points: 0</p>
+        <div class="match">
+          <button class="addPts points border">Eat popcorn</button>
+          <button class="substractPts points border">Scream boo</button>
+        </div>
+        <p id="win"></p>
+
+      </article>
+
+      <article class="sub-article">
+
+        <p style="margin-top:2em"><strong>Disclaimer:</strong> This is a work of fiction. Names, characters, business, events and incidents are the products of the author’s imagination. Any resemblance to actual persons, living or dead, or actual
+          events is purely
+          coincidental.</p>
+
       </article>
     </section>
-
 
     <script src="js/script.js"></script>
   </body>

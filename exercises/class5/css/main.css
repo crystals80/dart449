@@ -28,6 +28,13 @@ body {
   height: 100vh;
 }
 
+.bg {
+  width: auto;
+  height: auto;
+  background: url(../img/stephen-h-unsplash.jpg) fixed center center no-repeat;
+  background-size: cover;
+}
+
 section {
   width: 100%;
   height: auto;
@@ -51,7 +58,18 @@ article {
   align-items: center;
 }
 
+.sub-article {
+  margin-top: 3em;
+}
+
 div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.match {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -66,7 +84,16 @@ h1 {
 h2 {
   font-family: gotham, helvetica, sans-serif;
   font-size: 1.5em;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
+}
+
+p {
+  margin-top: 0;
+  text-align: center;
+}
+
+#win {
+  margin-top: 1em;
 }
 
 /* BUTTON CUSTOMIZATION */
@@ -77,10 +104,6 @@ h2 {
   transform: translate(-50%, -50%); */
 }
 
-p {
-  margin-top: 0;
-}
-
 .border {
   border: 1px solid black;
   border-radius: 5px;
@@ -88,6 +111,58 @@ p {
   padding: .5em;
   margin-bottom: 1em;
   cursor: pointer;
+}
+
+.hockeyTeam {
+  margin: 0 1em 1em 1em;
+}
+
+.hockeyTeam:hover {
+  color: white;
+}
+
+#one:hover {
+  background-color: #FFB81C;
+}
+
+#two:hover {
+  background-color: #002654;
+}
+
+#three:hover {
+  background-color: #CE1126;
+}
+
+#four:hover {
+  background-color: #B9975B;
+}
+
+#five:hover {
+  background-color: #AF1E2D;
+}
+
+#six:hover {
+  background-color: #C2912C;
+}
+
+#seven:hover {
+  background-color: #002868;
+}
+
+#eight:hover {
+  background-color: #00205B;
+}
+
+.points {
+  margin: 0 7em 1em 7em;
+}
+
+.addPts:hover {
+  background-color: green;
+}
+
+.substractPts:hover {
+  background-color: red;
 }
 
 /* ANIMATION */
