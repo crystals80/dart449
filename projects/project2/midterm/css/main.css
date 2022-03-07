@@ -4,9 +4,9 @@
 /* ===== COLOUR PALETTE ===== */
 /**********
 MY COLOURS
-Cream: #FFF5EC; Dark-Grey : #141414; Brown: #403226; Orange-Brown: #A65233; Tan: #C27F66;
+Cream: #FFF5EC; Dark-Grey : #141414; Brown: #31201c; Orange-Brown: #A65233; Tan: #C27F66;
 COLOURS EXTRACTED OUT FROM HOMEPAGE BANNER
-Bright-Teal: #00C6C6; Turquoise: #40E0D0; Aqua-Blue: #50E6F7; Flashy-Blue: #84FFFF;
+Bright-Teal: #00C6C6; Turquoise: #40E0D0; Aqua-Blue: #50E6F7; Flashy-Blue: #85F3FF;
 **********/
 * {
   margin: 0;
@@ -69,7 +69,6 @@ section {
   z-index: 101;
   top: 0;
   left: 0;
-  background-color: #261B18;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -79,7 +78,6 @@ section {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-flow: column wrap;
 }
 
 .overlay a, .overlay a:visited {
@@ -88,7 +86,7 @@ section {
   text-decoration: none;
   font-family: 'Passion One', cursive;
   font-size: 50px;
-  color: #FFF5EC;
+  color: #31201c;
   /* writing-mode: vertical-lr; */
   text-transform: uppercase;
   font-weight: normal;
@@ -97,24 +95,24 @@ section {
 }
 
 .overlay a:hover, .overlay a:focus, .overlay a:visited:hover {
-  color: #261B18;
-  background: #0A9EBF;
-}
-
-.overlay a.one {
-  background: #F2CBBD;
-}
-
-.overlay a.two {
-  background: #C27F66;
-}
-
-.overlay a.three {
+  color: #FFF5EC;
   background: #A65233;
 }
 
+.overlay a.one {
+  background: #85F3FF;
+}
+
+.overlay a.two {
+  background: #50E6F7;
+}
+
+.overlay a.three {
+  background: #40E0D0;
+}
+
 .overlay a.four {
-  background: #261B18;
+  background: #00C6C6;
 }
 
 .overlay a span {
@@ -139,13 +137,13 @@ section {
   padding: 8px;
   text-decoration: none;
   font-family: 'Passion One', cursive;
-  color: #FFF5EC;
+  color: #31201c;
   transition: all 0.3s;
   text-transform: uppercase;
 }
 
 .closebtn:hover {
-  color: #11C5D9;
+  color: #FFF5EC;
 }
 
 /* ===== HOMEPAGE BANNER ===== */
@@ -178,20 +176,20 @@ section {
 }
 
 /* ===== MOODBOARD PAGE BANNER ===== */
-.reading {
-  background: url(../images/david-reynolds-unsplash.jpg) fixed no-repeat center center;
+.moodboard {
+  background: url(../images/randall-ruiz-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
 }
 
 /* ===== MOCK-UPS PAGE BANNER ===== */
-.exercise {
-  background: url(../images/randall-ruiz-unsplash.jpg) fixed no-repeat center center;
+.mockups {
+  background: url(../images/david-reynolds-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
 }
 
 /* ===== COLUMN LAYOUT ===== */
 .multi_art {
-  background: #F2CBBD;
+  background: #50E6F7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,7 +203,7 @@ section {
   font-family: 'Passion One', cursive;
   font-size: 36px;
   text-transform: uppercase;
-  color: #261B18;
+  color: #31201c;
   font-weight: normal;
 }
 
@@ -223,14 +221,14 @@ section {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background: #C27F66;
+  background: #40E0D0;
   min-height: 50vh;
   height: auto;
 }
 
 .figs figure {
   margin: 20px;
-  background: #11C5D9;
+  background: #00C6C6;
   min-height: 300px;
   height: auto;
   position: relative;
@@ -238,7 +236,7 @@ section {
 }
 
 .figs figure figcaption {
-  background: #F2CBBD;
+  background: #50E6F7;
   padding: 10px 20px;
   position: absolute;
   bottom: 0;
@@ -252,7 +250,7 @@ section {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   font-style: italic;
-  color: #261B18;
+  color: #31201c;
   padding: 10px 20px;
   position: absolute;
   bottom: 0;
@@ -262,7 +260,7 @@ section {
 }
 
 .figs a, .figs a:visited {
-  color: #261B18;
+  color: #31201c;
   text-decoration: none;
 }
 
@@ -313,7 +311,7 @@ section {
 
 /* ===== FOOTER ===== */
 footer {
-  background: #261B18;
+  background: #31201c;
   color: #FFF5EC;
   text-align: center;
   padding: 20px;
@@ -322,7 +320,7 @@ footer {
 /* ===== OTHER PAGES ===== */
 /* ===== TITLE HEADING ===== */
 #title-heading {
-  background: #F2CBBD;
+  background: #50E6F7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,45 +331,11 @@ footer {
   font-family: 'Passion One', cursive;
   font-size: 28px;
   text-transform: uppercase;
-  color: #261B18;
+  color: #31201c;
   text-align: center;
   padding: 0 .25em;
   transition: all 1s ease;
-  animation: hvr-pulse-grow-horizontal 0.6s 2s linear infinite alternate;
-}
-
-/* ===== REFLECTION FLIP CARD ===== */
-#reflection {
-  background: #F2CBBD;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  ;
-  padding-bottom: 50px;
-}
-
-#reflection img {
-  width: 450px;
-  border-radius: 10px;
-}
-
-#reflection a, #reflection a:visited {
-  color: #FFF5EC;
-  text-decoration: none;
-}
-
-#reflection h1 {
-  font-family: 'Passion One', cursive;
-  font-size: 32px;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  color: #261B18;
-}
-
-#reflection p {
-  font-family: 'Poiret One', cursive;
-  color: #FFF5EC;
+  animation: pulse-grow-horizontal 0.6s 2s linear infinite alternate;
 }
 
 /* ===== EXERCISE FLIP CARD ===== */
@@ -381,7 +345,7 @@ footer {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background: #F2CBBD;
+  background: #50E6F7;
   padding: 0 50px 30px 50px;
 }
 
@@ -392,7 +356,7 @@ footer {
 
 #exercise a, #exercise a:visited {
   font-weight: 600;
-  color: #261B18;
+  color: #31201c;
   font-size: 14px;
   text-decoration: underline;
   margin-top: 1em;
@@ -400,7 +364,7 @@ footer {
 }
 
 #exercise h1 {
-  color: #F2CBBD;
+  color: #50E6F7;
   font-size: 32px;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -416,11 +380,8 @@ footer {
 .overlay-flip-card {
   font-family: 'Passion One', cursive;
   position: absolute;
-  color: #F2CBBD;
+  color: #85F3FF;
   text-align: center;
-  /* left: 109px; */
-  /* Black background with 0.5 opacity */
-  /* background: rgba(0, 0, 0, 0.5); */
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -509,12 +470,9 @@ footer {
   }
 
   .overlay a, .overlay a:visited {
-    position: relative;
-    padding: 0px;
-    text-decoration: none;
     font-family: 'Passion One', cursive;
     font-size: 90px;
-    color: #FFF5EC;
+    color: #31201c;
     /* writing-mode: vertical-lr; */
     text-transform: uppercase;
     font-weight: normal;

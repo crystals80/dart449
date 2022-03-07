@@ -21,12 +21,12 @@ html {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: #11C5D9;
+  background: #A65233;
   text-shadow: none;
 }
 
 ::selection {
-  background: #11C5D9;
+  background: #A65233;
   text-shadow: none;
 }
 
