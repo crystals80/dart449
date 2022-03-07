@@ -4,9 +4,9 @@
 /* ===== COLOUR PALETTE ===== */
 /**********
 MY COLOURS
-Cream: #FFF5EC; Dark-Grey : #282828; Tan: #C27F66;
+Cream: #FFF5EC; Dark-Grey : #141414; Brown: #403226; Orange-Brown: #A65233; Tan: #C27F66;
 COLOURS EXTRACTED OUT FROM HOMEPAGE BANNER
-Dull-Teal: #0A9EBF; Bright-Teal: #11C5D9; Orange-Brown: #A65233; Pink-Beige: #F2CBBD; Dark-Brown: #261B18;
+Bright-Teal: #00C6C6; Turquoise: #40E0D0; Aqua-Blue: #50E6F7; Flashy-Blue: #84FFFF;
 **********/
 * {
   margin: 0;
@@ -154,7 +154,7 @@ section {
   /* width: 100%; */
   min-height: 100vh;
   height: auto;
-  background: url(../images/steve-le-unsplash.jpg) fixed no-repeat center center;
+  background: url(../images/david-troeger-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -177,21 +177,15 @@ section {
   padding-bottom: .25em;
 }
 
-/* ===== READING REFLECTIONS PAGE BANNER ===== */
+/* ===== MOODBOARD PAGE BANNER ===== */
 .reading {
-  background: url(../images/thought-catalog-unsplash.jpg) fixed no-repeat center center;
+  background: url(../images/david-reynolds-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
 }
 
-/* ===== EXERCISES PAGE BANNER ===== */
+/* ===== MOCK-UPS PAGE BANNER ===== */
 .exercise {
-  background: url(../images/ales-nesetril-unsplash.jpg) fixed no-repeat center center;
-  background-size: cover;
-}
-
-/* ===== PROJECTS PAGE BANNER ===== */
-.project {
-  background: url(../images/scott_graham_unsplash.jpg) fixed no-repeat center center;
+  background: url(../images/randall-ruiz-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
 }
 
@@ -277,19 +271,9 @@ section {
 }
 
 /* ===== FIGURE-CAPTION BACKGROUND IMAGES ===== */
-#fig0 {
-  height: auto;
-  background: url(../images/steve-le-unsplash.jpg) fixed no-repeat center center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
 #fig1 {
   height: auto;
-  background: url(../images/thought-catalog-unsplash.jpg) fixed center center no-repeat;
+  background: url(../images/david-troeger-unsplash-edit.jpg) fixed center center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -299,7 +283,7 @@ section {
 
 #fig2 {
   height: auto;
-  background: url(../images/ales-nesetril-unsplash.jpg) fixed center center no-repeat;
+  background: url(../images/randall-ruiz-unsplash.jpg) fixed center center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -309,7 +293,7 @@ section {
 
 #fig3 {
   height: auto;
-  background: url(../images/scott_graham_unsplash.jpg) fixed center center no-repeat;
+  background: url(../images/david-reynolds-unsplash.jpg) fixed center center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -319,7 +303,7 @@ section {
 
 #fig4 {
   height: auto;
-  background: url(../images/sky-wallpapercave.jpg) fixed center center no-repeat;
+  background: url(../images/steve-le-unsplash.jpg) fixed center center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
