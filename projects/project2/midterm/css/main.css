@@ -182,7 +182,7 @@ section {
 }
 
 /* ===== MOCK-UPS PAGE BANNER ===== */
-.mockups {
+.prototype {
   background: url(../images/david-reynolds-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
 }
