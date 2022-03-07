@@ -1,0 +1,563 @@
+/* ===== MY CSS STYLES ===== */
+@import 'https://fonts.googleapis.com/css?family=Passion+One|Poiret+One';
+
+/* ===== COLOUR PALETTE ===== */
+/**********
+MY COLOURS
+Cream: #FFF5EC; Dark-Grey : #282828; Tan: #C27F66;
+COLOURS EXTRACTED OUT FROM HOMEPAGE BANNER
+Dull-Teal: #0A9EBF; Bright-Teal: #11C5D9; Orange-Brown: #A65233; Pink-Beige: #F2CBBD; Dark-Brown: #261B18;
+**********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+section {
+  position: relative;
+  padding: 20px;
+}
+
+/* ===== PHONE LAYOUT (NOT RECOMMENDED)===== */
+/* ===== LOGO ===== */
+#logo {
+  position: absolute;
+  left: 20px;
+  top: 26px;
+  z-index: 10;
+}
+
+#logo img {
+  width: auto;
+  height: 2em;
+}
+
+/* ===== NAVIGATION BAR ===== */
+#trigger {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 23px;
+  right: 27px;
+  z-index: 9;
+  color: #FFF5EC;
+  font-weight: bold;
+}
+
+#trigger:hover {
+  color: #A65233;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background-color: #261B18;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.overlay a, .overlay a:visited {
+  position: relative;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Passion One', cursive;
+  font-size: 50px;
+  color: #FFF5EC;
+  /* writing-mode: vertical-lr; */
+  text-transform: uppercase;
+  font-weight: normal;
+  flex: 1 100%;
+  transition: all 0.5s;
+}
+
+.overlay a:hover, .overlay a:focus, .overlay a:visited:hover {
+  color: #261B18;
+  background: #0A9EBF;
+}
+
+.overlay a.one {
+  background: #F2CBBD;
+}
+
+.overlay a.two {
+  background: #C27F66;
+}
+
+.overlay a.three {
+  background: #A65233;
+}
+
+.overlay a.four {
+  background: #261B18;
+}
+
+.overlay a span {
+  position: absolute;
+  left: 25px;
+  bottom: 0px;
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  transition: all 0.5s ease-in-out;
+  /* left: 20px;
+		bottom: 0px; */
+}
+
+.closebtn {
+  position: absolute;
+  z-index: 102;
+  top: 37px;
+  right: 15px;
+  font-size: 75px !important;
+  line-height: 0px;
+  cursor: pointer;
+  padding: 8px;
+  text-decoration: none;
+  font-family: 'Passion One', cursive;
+  color: #FFF5EC;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.closebtn:hover {
+  color: #11C5D9;
+}
+
+/* ===== HOMEPAGE BANNER ===== */
+.banner {
+  color: #FFF5EC;
+  /* width: 100%; */
+  min-height: 100vh;
+  height: auto;
+  background: url(../images/steve-le-unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.banner h2 {
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  line-height: 10px;
+  font-weight: normal;
+  padding-bottom: .25em;
+}
+
+/* ===== READING REFLECTIONS PAGE BANNER ===== */
+.reading {
+  background: url(../images/thought-catalog-unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+}
+
+/* ===== EXERCISES PAGE BANNER ===== */
+.exercise {
+  background: url(../images/ales-nesetril-unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+}
+
+/* ===== PROJECTS PAGE BANNER ===== */
+.project {
+  background: url(../images/scott_graham_unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+}
+
+/* ===== COLUMN LAYOUT ===== */
+.multi_art {
+  background: #F2CBBD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multi_art article {
+  margin: 24px;
+}
+
+.multi_art h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #261B18;
+  font-weight: normal;
+}
+
+.multi_art p {
+  margin-bottom: 20px;
+}
+
+.multi {
+  column-count: 1;
+}
+
+/*  ===== FIGURE-CAPTION LINKS ===== */
+.figs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #C27F66;
+  min-height: 50vh;
+  height: auto;
+}
+
+.figs figure {
+  margin: 20px;
+  background: #11C5D9;
+  min-height: 300px;
+  height: auto;
+  position: relative;
+  flex: 1 100%;
+}
+
+.figs figure figcaption {
+  background: #F2CBBD;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.figs div {
+  background: #FFF5EC;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-style: italic;
+  color: #261B18;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+}
+
+.figs a, .figs a:visited {
+  color: #261B18;
+  text-decoration: none;
+}
+
+.figs article p {
+  transition: all .5s ease;
+}
+
+/* ===== FIGURE-CAPTION BACKGROUND IMAGES ===== */
+#fig0 {
+  height: auto;
+  background: url(../images/steve-le-unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#fig1 {
+  height: auto;
+  background: url(../images/thought-catalog-unsplash.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#fig2 {
+  height: auto;
+  background: url(../images/ales-nesetril-unsplash.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#fig3 {
+  height: auto;
+  background: url(../images/scott_graham_unsplash.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#fig4 {
+  height: auto;
+  background: url(../images/sky-wallpapercave.jpg) fixed center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #261B18;
+  color: #FFF5EC;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== OTHER PAGES ===== */
+/* ===== TITLE HEADING ===== */
+#title-heading {
+  background: #F2CBBD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+}
+
+#title-heading h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #261B18;
+  text-align: center;
+  padding: 0 .25em;
+  transition: all 1s ease;
+  animation: hvr-pulse-grow-horizontal 0.6s 2s linear infinite alternate;
+}
+
+/* ===== REFLECTION FLIP CARD ===== */
+#reflection {
+  background: #F2CBBD;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  ;
+  padding-bottom: 50px;
+}
+
+#reflection img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+#reflection a, #reflection a:visited {
+  color: #FFF5EC;
+  text-decoration: none;
+}
+
+#reflection h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 32px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #261B18;
+}
+
+#reflection p {
+  font-family: 'Poiret One', cursive;
+  color: #FFF5EC;
+}
+
+/* ===== EXERCISE FLIP CARD ===== */
+#exercise {
+  font-family: 'Poiret One', cursive;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #F2CBBD;
+  padding: 0 50px 30px 50px;
+}
+
+#exercise img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+#exercise a, #exercise a:visited {
+  font-weight: 600;
+  color: #261B18;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+#exercise h1 {
+  color: #F2CBBD;
+  font-size: 32px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+#exercise p {
+  color: #FFF5EC;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.overlay-flip-card {
+  font-family: 'Passion One', cursive;
+  position: absolute;
+  color: #F2CBBD;
+  text-align: center;
+  /* left: 109px; */
+  /* Black background with 0.5 opacity */
+  /* background: rgba(0, 0, 0, 0.5); */
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== FLIP CARD ===== */
+.flip-card {
+  background-color: transparent;
+  margin: 20px;
+  width: 450px;
+  height: 254px;
+  flex: 1 auto;
+}
+
+.flip-card-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  color: #FFF5EC;
+}
+
+.flip-card-back {
+  background-color: #A65233;
+  color: #FFF5EC;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+
+/* ===== TABLET LAYOUT (NOT RECOMMENDED) ===== */
+/* 481px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+  .banner h2 {
+    font-size: 30px;
+    line-height: 15px;
+    padding: .5em;
+  }
+
+  .banner h1 {
+    font-size: 72px;
+    line-height: 1em;
+  }
+
+  .multi {
+    column-count: 3;
+  }
+
+  .figs figure {
+    flex: 1 auto;
+  }
+}
+
+/* ===== DESKTOP LAYOUT (RECOMMENDED) ===== */
+/* Desktop Layout: 769px to a max of 1200px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 769px) {
+  #logo img {
+    width: auto;
+    height: 3em;
+  }
+
+  .overlay a, .overlay a:visited {
+    position: relative;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Passion One', cursive;
+    font-size: 90px;
+    color: #FFF5EC;
+    /* writing-mode: vertical-lr; */
+    text-transform: uppercase;
+    font-weight: normal;
+    flex: 1 100%;
+    transition: all 0.5s;
+  }
+
+  .overlay a span {
+    left: 50px;
+    bottom: -50px;
+  }
+
+  .banner h2 {
+    font-size: 40px;
+    line-height: 0px;
+  }
+
+  .banner h1 {
+    font-size: 96px;
+  }
+
+  #title-heading h1 {
+    font-size: 50px;
+    padding: auto;
+  }
+
+  .flip-card-back {
+    padding: 75px;
+  }
+}
