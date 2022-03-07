@@ -19,6 +19,8 @@ Images found on Unsplash:
 [nasa-unsplash.jpg](https://unsplash.com/photos/1lfI7wkGWZ4) — NASA
 [luke-chesser-unsplash.jpg](https://unsplash.com/photos/eICUFSeirc0) - Luke Chesser
 [markus-spiske-iar-unsplash.jpg](https://unsplash.com/photos/iar-afB0QQw) - Markus Spiske
+[david-troeger-unsplash.jpg](https://unsplash.com/photos/M8xxVih_V_U) – David Troeger
+[david-reynolds-unsplash.jpg](https://unsplash.com/photos/-eMN9QKB5bE) – David Reynolds
 <br>
 <br>
 Images found with Google Image
