@@ -446,6 +446,12 @@ footer {
   align-items: center;
 }
 
+/* ===== READINGS FLIP CARD ===== */
+#link-to-see {
+  padding-top: 1.5em;
+  font-family: 'Poiret One', cursive;
+}
+
 /* ===== FLIP CARD ===== */
 .flip-card {
   background-color: transparent;
