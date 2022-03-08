@@ -203,6 +203,7 @@ a, a:visited {
 }
 
 /* ===== MOODBOARD PAGE ===== */
+/* ===== COLOUR PALETTE LAYOUT ===== */
 .colour-palette {
   display: flex;
   flex-direction: column;
@@ -295,6 +296,7 @@ a, a:visited {
   align-items: flex-start;
 }
 
+/* ===== TYPEFACES LAYOUT ===== */
 .typeface h1 {
   padding: 1.5rem 0 3rem 0;
   display: flex;
@@ -318,6 +320,52 @@ a, a:visited {
   margin-left: 5rem;
   padding: 1.5rem 2rem 0.5rem 2rem;
   border: 2px solid #85F3FF;
+}
+
+/* ===== INSPIRATIONAL WEBSITES LAYOUT ===== */
+.inspiration {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.inspiration h1 {
+  padding: 1.5rem 0 3rem 0;
+  text-align: center;
+}
+
+.website {
+  margin: 3rem 10rem;
+}
+
+.website img {
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.text {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.text p {
+  margin: 0 10rem;
 }
 
 /* ===== COLUMN LAYOUT ===== */
