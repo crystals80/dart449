@@ -8,6 +8,7 @@ Cream: #FFF5EC; Dark-Grey : #141414; Brown: #31201c; Orange-Brown: #A65233; Tan:
 COLOURS EXTRACTED OUT FROM HOMEPAGE BANNER
 Bright-Teal: #00C6C6; Turquoise: #40E0D0; Aqua-Blue: #50E6F7; Flashy-Blue: #85F3FF;
 **********/
+/* ===== HTML BODY DEFAULT ===== */
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +31,19 @@ Bright-Teal: #00C6C6; Turquoise: #40E0D0; Aqua-Blue: #50E6F7; Flashy-Blue: #85F3
 section {
   position: relative;
   padding: 20px;
+}
+
+body {
+  color: #31201c;
+}
+
+p {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+a, a:visited {
+  color: #A65233;
 }
 
 /* ===== PHONE LAYOUT (NOT RECOMMENDED)===== */
@@ -185,6 +199,104 @@ section {
 .prototype {
   background: url(../images/david-reynolds-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
+}
+
+/* ===== MOODBOARD PAGE ===== */
+.colour-palette {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.colour-palette h1 {
+  padding: 1.5rem 0;
+}
+
+.colour-drops {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop {
+  position: relative;
+  padding: 0;
+  margin: 3rem;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0% 100% 100% 100%;
+  /* box-shadow: 20px -2px 15px 2px rgba(0, 0, 0, 0.5); */
+  box-shadow: 5px -2px 5px 2px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-one {
+  background-color: #85F3FF;
+}
+
+.c-two {
+  background-color: #50E6F7;
+}
+
+.c-three {
+  background-color: #40E0D0;
+}
+
+.c-four {
+  background-color: #00C6C6;
+}
+
+.c-five {
+  background-color: #FFF5EC;
+}
+
+.c-six {
+  background-color: #31201c;
+}
+
+.c-seven {
+  background-color: #A65233;
+}
+
+.drop-text {
+  position: relative;
+  padding: 0;
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.drop-text h6 {
+  font-family: 'Passion One', cursive;
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+
+.align-left {
+  margin: ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.typeface h1 {
+  padding: 1.5rem 0;
 }
 
 /* ===== COLUMN LAYOUT ===== */
