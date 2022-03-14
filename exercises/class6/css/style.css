@@ -97,4 +97,27 @@ section:nth-child(even) {
     transition-delay: calc(0.055s * var(--i));
     /* use this to stagger anim var values inline */
   }
+
+  /*** PROGRESS BAR ***/
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  /* The progress container (transparent background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+  }
+
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #D5303D;
+    width: 0%;
+  }
 }
