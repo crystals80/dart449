@@ -29,12 +29,6 @@ html, body {
   /* height: 100vh; */
 }
 
-/* Gradient Background */
-/* .changeColour {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-} */
 main {
   overflow-x: hidden;
   display: flex;
@@ -78,6 +72,7 @@ section:nth-child(even) {
     background-color: #30D5C8;
   }
 
+  /*** SECTION CUSTOMIZATION ***/
   .anim_container {
     position: relative;
     /* border: 1px #333 solid; */
@@ -103,18 +98,3 @@ section:nth-child(even) {
     /* use this to stagger anim var values inline */
   }
 }
-
-/* ANIMATION */
-/* @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-} */
