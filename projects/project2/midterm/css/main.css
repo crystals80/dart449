@@ -190,19 +190,13 @@ a, a:visited {
   padding-bottom: .25em;
 }
 
+/* ===== MOODBOARD PAGE ===== */
 /* ===== MOODBOARD PAGE BANNER ===== */
 .moodboard {
   background: url(../images/randall-ruiz-unsplash.jpg) fixed no-repeat center center;
   background-size: cover;
 }
 
-/* ===== MOCK-UPS PAGE BANNER ===== */
-.prototype {
-  background: url(../images/david-reynolds-unsplash.jpg) fixed no-repeat center center;
-  background-size: cover;
-}
-
-/* ===== MOODBOARD PAGE ===== */
 /* ===== COLOUR PALETTE LAYOUT ===== */
 .colour-palette {
   display: flex;
@@ -267,7 +261,7 @@ a, a:visited {
 }
 
 .c-seven {
-  background-color: #A65233;
+  background-color: #141414;
 }
 
 .drop-text {
@@ -366,6 +360,27 @@ a, a:visited {
 
 .text p {
   margin: 0 10rem;
+}
+
+/* ===== MOCK-UPS PAGE ===== */
+/* ===== MOCK-UPS PAGE BANNER ===== */
+.prototype {
+  background: url(../images/david-reynolds-unsplash.jpg) fixed no-repeat center center;
+  background-size: cover;
+}
+
+/* ===== MOCK-UPS TEMPLATE IMAGES ===== */
+.align-middle {
+  position: relative;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, 0%);
+}
+
+.template {
+  width: auto;
+  height: 10rem;
+  margin: 2rem;
 }
 
 /* ===== COLUMN LAYOUT ===== */
