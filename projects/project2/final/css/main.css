@@ -43,6 +43,49 @@ h1 {
   font-family: 'Calistoga', cursive;
 }
 
+.title {
+  color: #84FFFF;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 7rem;
+  height: 100vh;
+}
+
+.title img {
+  width: 32.5rem;
+  padding-top: 5rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===== LOGO ===== */
+#logo {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  z-index: 10;
+}
+
+#logo img {
+  width: auto;
+  height: 3.5rem;
+  padding-right: 2rem;
+}
+
+#logo a {
+  color: #84FFFF;
+  text-decoration: none;
+}
+
 /* ===== PROGRESS BAR ===== */
 .header {
   position: fixed;
