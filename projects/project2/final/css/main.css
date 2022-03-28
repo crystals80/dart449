@@ -44,7 +44,7 @@ h1 {
 }
 
 .title {
-  color: #84FFFF;
+  color: #FFF5EC;
   font-size: 3rem;
   text-align: center;
   line-height: 7rem;
@@ -78,11 +78,11 @@ h1 {
 #logo img {
   width: auto;
   height: 3.5rem;
-  padding-right: 2rem;
+  padding-right: 1.25rem;
 }
 
 #logo a {
-  color: #84FFFF;
+  color: #141414;
   text-decoration: none;
 }
 
