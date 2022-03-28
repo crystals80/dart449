@@ -87,27 +87,13 @@ h1 {
   text-decoration: none;
 }
 
-/****** ARROW ******/
-#arrow {
-  width: auto;
-  height: 8.5rem;
-  position: absolute;
-  top: 50%;
-  left: 145%;
-  transform: translate(-50%, -50%);
-}
-
-#arrow:hover {
-  cursor: pointer;
-}
-
 /****** PROGRESS BAR ******/
 .header {
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #FFF5EC;
 }
 
 /* The progress container (transparent background) */
