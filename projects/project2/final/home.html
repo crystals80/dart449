@@ -25,6 +25,7 @@
       <img class="sea-layer-3" src="images/sea-layer-3-crop.svg" alt="sea layer 3">
     </div>
 
+    <!-- Logo -->
     <header>
       <div id="logo">
         <a href="index.html"><img src="images/turtle-logo.svg" alt="turtle logo" type="images/svg+xml"></a>
@@ -37,7 +38,7 @@
         <h1>The Tales of </h1>
         <h1> Endangered Turtles</h1>
         <img id="anim-turtle" src="images/turtle-crop.gif" alt="turtle animation">
-        <a href="hawksbill-sea-turtle.html"><img id="arrow" src="images/arrow-left.svg" alt="arrow"></a>
+        <a href="olive-ridley-sea-turtle.html"><img id="arrow" src="images/arrow-left.svg" alt="arrow"></a>
       </div>
     </main>
 
@@ -46,6 +47,18 @@
     <div class="cursor2"></div>
 
     <!-- JS script(s) -->
+    <script>
+      /****** LANDING PAGE ARROW ******/
+      const animTurtle = document.querySelector('#anim-turtle');
+      const arrow = document.querySelector('#arrow');
+
+      animTurtle.addEventListener('mouseover', function handleMouseOver() {
+        let timer = setTimeout(function() {
+          arrow.style.opacity = 1;
+        }, 1500);
+      });
+    </script>
+
     <script src="js/script.js"></script>
     <script src="js/show-on-scroll.js"></script>
 

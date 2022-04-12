@@ -32,19 +32,3 @@ a.forEach(item => {
     cursor.classList.remove('hover');
   });
 });
-
-/****** LANDING PAGE ARROW ******/
-
-// (1) Show arrow when user hover over turtle
-// $('#anim-turtle').hover(function() {
-//   $('#arrow').fadeIn(2000);
-// });
-
-const animTurtle = document.querySelector('#anim-turtle');
-const arrow = document.querySelector('#arrow');
-
-animTurtle.addEventListener('mouseover', function handleMouseOver() {
-  let timer = setTimeout(function() {
-    arrow.style.opacity = 1;
-  }, 1500);
-});
