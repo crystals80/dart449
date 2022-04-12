@@ -65,8 +65,7 @@ section h2 {
 
 /* SHOW IMAGES ON TEXT HOVER */
 .show-on-hover {
-  /* display: inline-block; */
-  display: none;
+  display: inline-block;
   position: fixed;
   bottom: 10%;
 }
@@ -75,7 +74,11 @@ section h2 {
   padding: 0 1rem;
 }
 
-/* TUNICATE IMAGE */
+.visibility {
+  visibility: hidden;
+}
+
+/* LOBSTER & TUNICATE IMAGES */
 .hover-img {
   height: 150px;
 }

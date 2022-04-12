@@ -66,32 +66,104 @@ function myFunction() {
 }
 
 /****** INTERACTIONS ******/
-// Wrong answers
-$(".wrong").on("click", function() {
-  $(this).addClass("shake");
-  $(this).css("background-color", "#FA000080")
+/* HOVER OVER TEXT TO SEE IMAGE */
+$('.hover-algae').mouseover(function() {
+  $('.algae').css('visibility', 'visible');
+});
+$('.hover-algae').mouseout(function() {
+  $('.algae').css('visibility', 'hidden');
+});
 
+$('.hover-lobster').mouseover(function() {
+  $('.lobster').css('visibility', 'visible');
+});
+
+$('.hover-lobster').mouseout(function() {
+  $('.lobster').css('visibility', 'hidden');
+});
+
+$('.hover-crab').mouseover(function() {
+  $('.crab').css('visibility', 'visible');
+});
+
+$('.hover-crab').mouseout(function() {
+  $('.crab').css('visibility', 'hidden');
+});
+
+$('.hover-tunicate').mouseover(function() {
+  $('.tunicate').css('visibility', 'visible');
+});
+
+$('.hover-tunicate').mouseout(function() {
+  $('.tunicate').css('visibility', 'hidden');
+});
+
+$('.hover-mollusk').mouseover(function() {
+  $('.mollusk').css('visibility', 'visible');
+});
+
+$('.hover-mollusk').mouseout(function() {
+  $('.mollusk').css('visibility', 'hidden');
+});
+
+$('.hover-shrimp').mouseover(function() {
+  $('.shrimp').css('visibility', 'visible');
+});
+
+$('.hover-shrimp').mouseout(function() {
+  $('.shrimp').css('visibility', 'hidden');
+});
+
+$('.hover-fish').mouseover(function() {
+  $('.fish').css('visibility', 'visible');
+});
+
+$('.hover-fish').mouseout(function() {
+  $('.fish').css('visibility', 'hidden');
+});
+
+/* CONSERVATION STATUS QUESTION */
+// For wrong answers...
+$(".wrong").on("click", function() {
+  // ...shake objects
+  $(this).addClass("shake");
+  // ...and display them transparently red...
+  $(this).css("background-color", "#FA000080")
+  // ...then reset the modifications by...
   let delay1 = setTimeout(function() {
+    // ...removing the shake effect class...
     $(".shake").removeClass("shake");
+    // ...and by changing the transparently red colour back to initial transparently turquoise colour...
     $(".wrong").css("background-color", "#50E6F750")
+    // ...after 2 seconds
   }, 2000);
 });
 
-// Good answers
+// For good answers...
 $(".correct").on("click", function() {
+  // ...make objects wobble...
   $(this).addClass("jello");
-  $(this).css("background-color", "#00ff1150")
+  // ...display them transparently green...
+  $(this).css("background-color", "#00ff1150");
+  // ...hide initial message from dialog box...
   $(".msg1").hide();
+  // ...and show a new message for choosing the correct answer
   $(".msg2").show();
 
-
+  // ...then reset the modifications by...
   let delay2 = setTimeout(function() {
+    // ...removing the jello/wobble effect class...
     $(".jello").removeClass("jello");
+    // ...by hiding the new message...
     $(".msg2").hide();
+    // ...by showing the initial message...
     $(".msg1").show();
+    // ...and by changing the transparently green colour back to initial transparently turquoise colour...
     $(".correct").css("background-color", "#50E6F750")
+    // ...after 10 seconds to let the user read the message
   }, 10000);
 });
+
 
 // $(document).ready(function() {
 //       setTimeout(function() {});
