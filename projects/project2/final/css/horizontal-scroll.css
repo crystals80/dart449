@@ -1,27 +1,92 @@
 main {
-  overflow-x: hidden;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: url(../images/sea-layer-4-crop.svg) fixed center bottom;
+  background-repeat: repeat-x;
+}
+
+.anim_container {
+  z-index: 15;
+}
+
+.anim_container h1, .anim_container p {
+  display: inline-block;
+}
+
+/****** SECTION SETUP ******/
+section {
+  min-width: 100%;
+  min-height: 100vh;
+  font-size: 2rem;
+  color: #FFF5EC;
+}
+
+section:nth-child(even) {}
+
+/* ----------------------------------------------
+Taken from CSS Gradient
+* See https://cssgradient.io/blog/css-gradient-text/
+* ---------------------------------------------- */
+section h1 {
+  background: -webkit-linear-gradient(-90deg, #E4FF92, #819543);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section h2 {
+  color: #84FFFF;
+}
+
+#s1, #s2, #s3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SECTION 2 ELEMENTS SETUP */
+#s2 .anim_container h2, #s2 .anim_container p {
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+
+/* INFO ABOUT TURTLES */
+.info-list {
   display: flex;
   flex-direction: column;
 }
 
-.anim_container h1 {
-  display: inline-block;
-}
-
-section {
-  min-width: 100%;
-  min-height: 100vh;
+.info {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
 }
 
-section:nth-child(even) {
-  background-color: #31D6A2;
-  color: white;
+/* SHOW IMAGES ON TEXT HOVER */
+.show-on-hover {
+  /* display: inline-block; */
+  display: none;
+  position: fixed;
+  bottom: 10%;
 }
 
+.show-on-hover img {
+  padding: 0 1rem;
+}
+
+/* TUNICATE IMAGE */
+.hover-img {
+  height: 150px;
+}
+
+/* SECTION 3 ELEMENTS SETUP */
+#s3 h1 {
+  font-size: 4rem;
+  margin-right: .25rem;
+}
+
+/****** DESKTOP VIEW ******/
 @media screen and (min-width: 700px) {
   main {
     flex-direction: row;
@@ -32,15 +97,9 @@ section:nth-child(even) {
     font-size: 4em;
   }
 
-  section:nth-child(even) {
-    background-color: #30D5C8;
-  }
-
   /*** SECTION CUSTOMIZATION ***/
   .anim_container {
     position: relative;
-    /* border: 1px #333 solid; */
-    /* padding-bottom: 10px; */
     margin-bottom: 20px;
     overflow: hidden;
     display: flex;
@@ -49,15 +108,74 @@ section:nth-child(even) {
     width: 100%;
   }
 
-  .anim_container h1 {
+  .anim_container h1, .anim_container h2, .anim_container p {
     position: relative;
     /* display: inline-block; */
     transform: translateY(200px);
     transition: all .6s cubic-bezier(0, .55, .75, 1.29);
   }
 
-  .active .anim_container h1 {
+  .active .anim_container h1, .active .anim_container h2, .active .anim_container p {
     transform: translateY(0);
     transition-delay: calc(0.055s * var(--i));
     /* use this to stagger anim var values inline */
+  }
+
+  /****** DIALOG BOX ******/
+  .dialog-box {
+    border: 1px solid #141414;
+    border-radius: 10px;
+  }
+
+  .following-dialog {
+    font-size: 1.1rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .following-dialog p {
+    margin-right: 0.35rem;
+    position: relative;
+    transform: translateY(200px);
+    transition: all .6s cubic-bezier(0, .55, .75, 1.29);
+  }
+
+  .active .following-dialog p {
+    margin-right: 0.35rem;
+    transform: translateY(0);
+    transition-delay: calc(0.055s * var(--i));
+  }
+
+  /****** TURTLE GUIDE ******/
+  #olive-ridley {
+    width: 15rem;
+    position: fixed;
+    top: 10%;
+    left: 2.5%;
+    z-index: 50;
+    -webkit-animation: vibrate-1 5s ease-in-out infinite both;
+    animation: vibrate-1 5s ease-in-out infinite both;
+  }
+
+  /****** CONSERVATION STATUS BUTTONS ******/
+  .endangered-status {
+    position: relative;
+    top: 25%;
+    left: -25%;
+    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: space-bw;
+    align-items: center;
+  }
+
+  .endangered-status button {
+    background: #50E6F750;
+    border: 1px solid #00C6C6;
+    border-radius: 50px;
+    padding: 2rem;
+    margin-right: 10rem;
   }
