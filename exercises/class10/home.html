@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="scrollbar">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Tales of Endangered Sea Turtles</title>
+
+    <!-- CSS stylesheet(s) -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/trans-anim.css">
+
+    <!-- Jquery scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div class="sea-layers">
+      <img class="sea-layer-1" src="images/sea-layer-1-crop.svg" alt="sea layer 1">
+      <img class="sea-layer-2" src="images/sea-layer-2-crop.svg" alt="sea layer 2">
+      <img class="sea-layer-3" src="images/sea-layer-3-crop.svg" alt="sea layer 3">
+    </div>
+
+    <!-- Logo -->
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="images/turtle-logo.svg" alt="turtle logo" type="images/svg+xml"></a>
+        <a href="https://www.worldwildlife.org/species/sea-turtle">Save the turtles!</a>
+      </div>
+    </header>
+
+    <main class="title">
+      <div class="center">
+        <h1>The Tales of </h1>
+        <h1> Endangered Turtles</h1>
+        <img id="anim-turtle" src="images/turtle-crop.gif" alt="turtle animation">
+        <a href="olive-ridley-sea-turtle.html"><img id="arrow" src="images/arrow-left.svg" alt="arrow"></a>
+      </div>
+    </main>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- JS script(s) -->
+    <script>
+      /****** LANDING PAGE ARROW ******/
+      const animTurtle = document.querySelector('#anim-turtle');
+      const arrow = document.querySelector('#arrow');
+
+      animTurtle.addEventListener('mouseover', function handleMouseOver() {
+        let timer = setTimeout(function() {
+          arrow.style.opacity = 1;
+        }, 1500);
+      });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/show-on-scroll.js"></script>
+
+  </body>
+
+</html>
