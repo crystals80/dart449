@@ -89,6 +89,10 @@ section h2 {
   margin-right: .25rem;
 }
 
+.msg2 {
+  background-color: #00ff1150;
+}
+
 /****** DESKTOP VIEW ******/
 @media screen and (min-width: 700px) {
   main {
@@ -118,15 +122,21 @@ section h2 {
     transition: all .6s cubic-bezier(0, .55, .75, 1.29);
   }
 
-  .active .anim_container h1, .active .anim_container h2, .active .anim_container p {
+  .active .anim_container h1 {
     transform: translateY(0);
     transition-delay: calc(0.055s * var(--i));
     /* use this to stagger anim var values inline */
   }
 
+  .active .anim_container h2, .active .anim_container p {
+    transform: translateY(0);
+    transition-delay: calc(0.15s * var(--i));
+    /* use this to stagger anim var values inline */
+  }
+
   /****** DIALOG BOX ******/
   .dialog-box {
-    border: 1px solid #141414;
+    border: 1px solid #84FFFF;
     border-radius: 10px;
   }
 
@@ -167,7 +177,7 @@ section h2 {
   /****** CONSERVATION STATUS BUTTONS ******/
   .endangered-status {
     position: relative;
-    top: 25%;
+    top: 22%;
     left: -25%;
     transform: translate(50%, -50%);
     display: flex;

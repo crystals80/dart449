@@ -27,6 +27,11 @@
   animation: vibrate-1 5s ease-in-out infinite both;
 }
 
+.none {
+  -webkit-animation: vibrate-1 6s ease-in-out infinite both;
+  animation: vibrate-1 6s ease-in-out infinite both;
+}
+
 .vul {
   -webkit-animation: vibrate-1 5s ease-in-out infinite both;
   animation: vibrate-1 5s ease-in-out infinite both;
