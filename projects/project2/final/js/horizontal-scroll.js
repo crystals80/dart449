@@ -134,7 +134,7 @@ hvrCursor.forEach(item => {
   });
 });
 
-/* CONSERVATION STATUS QUESTION */
+/* QUESTIONS AND ANSWERS */
 // For wrong answers...
 $(".wrong").on("click", function() {
   // ...shake objects
@@ -151,12 +151,12 @@ $(".wrong").on("click", function() {
     // ...removing the shake effect class...
     $(".shake").removeClass("shake");
     // ...by hiding the new message...
-    $(".alert").hide();
+    $(".alert, msg2, msg3, msg4").hide();
     // ...by showing the initial message...
     $(".msg1").show();
     // ...and by changing the transparently red colour back to initial transparently turquoise colour...
     $(".wrong").css("background-color", "#50E6F750");
-    // ...after 2 seconds
+    // ...after 5 seconds to let the user read the message
   }, 5000);
 });
 
@@ -167,7 +167,7 @@ $(".correct-1").on("click", function() {
   // ...display them transparently green...
   $(this).css("background-color", "#00ff1150");
   // ...hide initial message from dialog box...
-  $(".msg1, .msg3, .msg4").hide();
+  $(".msg1, .msg3, .msg4, .alert").hide();
   // ...and show a new message for choosing the correct answer
   $(".msg2").show();
 
@@ -176,61 +176,48 @@ $(".correct-1").on("click", function() {
     // ...removing the jello/wobble effect class...
     $(".jello").removeClass("jello");
     // ...by hiding the new message...
-    $(".msg2, .msg3, .msg4").hide();
+    $(".msg2, .msg3, .msg4, .alert").hide();
     // ...by showing the initial message...
     $(".msg1").show();
     // ...and by changing the transparently green colour back to initial transparently turquoise colour...
     $(".correct").css("background-color", "#50E6F750");
-    // ...after 10 seconds to let the user read the message
+    // ...after 10 seconds to let the user read the explanation
   }, 10000);
 });
 
+// Same as correct-1 but for correct-2 button
 $(".correct-2").on("click", function() {
-  // ...make objects wobble...
   $(this).addClass("jello");
-  // ...display them transparently green...
   $(this).css("background-color", "#00ff1150");
-  // ...hide initial message from dialog box...
-  $(".msg1, .msg2, .msg4").hide();
-  // ...and show a new message for choosing the correct answer
+  $(".msg1, .msg2, .msg4, .alert").hide();
   $(".msg3").show();
 
-  // ...then reset the modifications by...
   let delay3 = setTimeout(function() {
-    // ...removing the jello/wobble effect class...
     $(".jello").removeClass("jello");
-    // ...by hiding the new message...
-    $(".msg2, .msg3, .msg4").hide();
-    // ...by showing the initial message...
+    $(".msg2, .msg3, .msg4, .alert").hide();
     $(".msg1").show();
-    // ...and by changing the transparently green colour back to initial transparently turquoise colour...
     $(".correct").css("background-color", "#50E6F750");
-    // ...after 10 seconds to let the user read the message
   }, 10000);
 });
 
+// Same as correct-1 and correct-2 but for correct-3 button
 $(".correct-3").on("click", function() {
-  // ...make objects wobble...
   $(this).addClass("jello");
-  // ...display them transparently green...
   $(this).css("background-color", "#00ff1150");
-  // ...hide initial message from dialog box...
-  $(".msg1, .msg2, .msg3").hide();
-  // ...and show a new message for choosing the correct answer
+  $(".msg1, .msg2, .msg3, .alert").hide();
   $(".msg4").show();
 
-  // ...then reset the modifications by...
   let delay4 = setTimeout(function() {
-    // ...removing the jello/wobble effect class...
     $(".jello").removeClass("jello");
-    // ...by hiding the new message...
-    $(".msg2, .msg3, .msg4").hide();
-    // ...by showing the initial message...
+    $(".msg2, .msg3, .msg4, .alert").hide();
     $(".msg1").show();
-    // ...and by changing the transparently green colour back to initial transparently turquoise colour...
     $(".correct").css("background-color", "#50E6F750");
-    // ...after 10 seconds to let the user read the message
   }, 10000);
+});
+
+// When initial message reappears, hide all new texts
+$(".msg1").show(function() {
+  $(".msg2, .msg3, msg4, .alert").hide();
 });
 
 
