@@ -24,6 +24,7 @@ document.addEventListener('mouseup', () => {
   cursorinner.classList.remove('cursorinnerhover');
 });
 
+/* CURSOR CHANGES COLOUR WHEN HOVERED OVER LINKS */
 a.forEach(item => {
   item.addEventListener('mouseover', () => {
     cursor.classList.add('hover');

@@ -67,59 +67,71 @@ function myFunction() {
 
 /****** INTERACTIONS ******/
 /* HOVER OVER TEXT TO SEE IMAGE */
-$('.hover-algae').mouseover(function() {
+$('.hvr-algae').mouseover(function() {
   $('.algae').css('visibility', 'visible');
 });
-$('.hover-algae').mouseout(function() {
+$('.hvr-algae').mouseout(function() {
   $('.algae').css('visibility', 'hidden');
 });
 
-$('.hover-lobster').mouseover(function() {
+$('.hvr-lobster').mouseover(function() {
   $('.lobster').css('visibility', 'visible');
 });
 
-$('.hover-lobster').mouseout(function() {
+$('.hvr-lobster').mouseout(function() {
   $('.lobster').css('visibility', 'hidden');
 });
 
-$('.hover-crab').mouseover(function() {
+$('.hvr-crab').mouseover(function() {
   $('.crab').css('visibility', 'visible');
 });
 
-$('.hover-crab').mouseout(function() {
+$('.hvr-crab').mouseout(function() {
   $('.crab').css('visibility', 'hidden');
 });
 
-$('.hover-tunicate').mouseover(function() {
+$('.hvr-tunicate').mouseover(function() {
   $('.tunicate').css('visibility', 'visible');
 });
 
-$('.hover-tunicate').mouseout(function() {
+$('.hvr-tunicate').mouseout(function() {
   $('.tunicate').css('visibility', 'hidden');
 });
 
-$('.hover-mollusk').mouseover(function() {
+$('.hvr-mollusk').mouseover(function() {
   $('.mollusk').css('visibility', 'visible');
 });
 
-$('.hover-mollusk').mouseout(function() {
+$('.hvr-mollusk').mouseout(function() {
   $('.mollusk').css('visibility', 'hidden');
 });
 
-$('.hover-shrimp').mouseover(function() {
+$('.hvr-shrimp').mouseover(function() {
   $('.shrimp').css('visibility', 'visible');
 });
 
-$('.hover-shrimp').mouseout(function() {
+$('.hvr-shrimp').mouseout(function() {
   $('.shrimp').css('visibility', 'hidden');
 });
 
-$('.hover-fish').mouseover(function() {
+$('.hvr-fish').mouseover(function() {
   $('.fish').css('visibility', 'visible');
 });
 
-$('.hover-fish').mouseout(function() {
+$('.hvr-fish').mouseout(function() {
   $('.fish').css('visibility', 'hidden');
+});
+
+/* CURSOR CHANGES COLOUR WHEN HOVERED OVER SPECIFIC WORDS*/
+const hvrCursor = document.querySelectorAll('.hvr-cursor');
+
+hvrCursor.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    cursor.classList.add('hover');
+  });
+  item.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover');
+  });
 });
 
 /* CONSERVATION STATUS QUESTION */
