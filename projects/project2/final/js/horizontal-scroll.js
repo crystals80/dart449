@@ -157,7 +157,7 @@ $(".wrong").on("click", function() {
     // ...and by changing the transparently red colour back to initial transparently turquoise colour...
     $(".wrong").css("background-color", "#50E6F750");
     // ...after 2 seconds
-  }, 2000);
+  }, 5000);
 });
 
 // For good answers...
