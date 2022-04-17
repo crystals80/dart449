@@ -89,8 +89,12 @@ section h2 {
   margin-right: .25rem;
 }
 
-.msg2 {
+.msg2, .msg3, .msg4 {
   background-color: #00ff1150;
+}
+
+.alert {
+  background-color: #FA000080;
 }
 
 /****** DESKTOP VIEW ******/
@@ -117,7 +121,6 @@ section h2 {
 
   .anim_container h1, .anim_container h2, .anim_container p {
     position: relative;
-    /* display: inline-block; */
     transform: translateY(200px);
     transition: all .6s cubic-bezier(0, .55, .75, 1.29);
   }
@@ -131,7 +134,6 @@ section h2 {
   .active .anim_container h2, .active .anim_container p {
     transform: translateY(0);
     transition-delay: calc(0.15s * var(--i));
-    /* use this to stagger anim var values inline */
   }
 
   /****** DIALOG BOX ******/
@@ -177,11 +179,11 @@ section h2 {
   /****** CONSERVATION STATUS BUTTONS ******/
   .endangered-status {
     position: relative;
-    top: 22%;
+    top: 23%;
     left: -25%;
     transform: translate(50%, -50%);
     display: flex;
-    justify-content: space-bw;
+    justify-content: space-between;
     align-items: center;
   }
 
