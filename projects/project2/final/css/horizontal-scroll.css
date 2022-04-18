@@ -28,8 +28,26 @@ section:nth-child(even) {}
 Taken from CSS Gradient
 * See https://cssgradient.io/blog/css-gradient-text/
 * ---------------------------------------------- */
-section h1 {
+.olive-ridley h1 {
   background: -webkit-linear-gradient(-90deg, #E4FF92, #819543);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leatherback h1 {
+  background: -webkit-linear-gradient(286deg, #F0EFEA, #141414);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green h1 {
+  background: -webkit-linear-gradient(288deg, #FFF2DD, #2C1E07);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hawksbill h1 {
+  background: -webkit-linear-gradient(76deg, #FFE5BF, #C47300);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -166,7 +184,7 @@ section h2 {
   }
 
   /****** TURTLE GUIDE ******/
-  #olive-ridley {
+  #turtle-guide {
     width: 15rem;
     position: fixed;
     top: 10%;
