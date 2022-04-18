@@ -66,7 +66,7 @@ function myFunction() {
 }
 
 /****** INTERACTIONS ******/
-/* HOVER OVER TEXT TO SEE IMAGE */
+/* HOVER OVER TEXT TO SEE IMAGE INDIVIDIUALLY */
 $('.hvr-algae').mouseover(function() {
   $('.algae').css('visibility', 'visible');
 });
@@ -144,6 +144,30 @@ $('.hvr-starfish').mouseover(function() {
 
 $('.hvr-starfish').mouseout(function() {
   $('.starfish').css('visibility', 'hidden');
+});
+
+$('.hvr-seagrass').mouseover(function() {
+  $('.seagrass').css('visibility', 'visible');
+});
+
+$('.hvr-seagrass').mouseout(function() {
+  $('.seagrass').css('visibility', 'hidden');
+});
+
+$('.hvr-insect').mouseover(function() {
+  $('.insect').css('visibility', 'visible');
+});
+
+$('.hvr-insect').mouseout(function() {
+  $('.insect').css('visibility', 'hidden');
+});
+
+$('.hvr-worm').mouseover(function() {
+  $('.worm').css('visibility', 'visible');
+});
+
+$('.hvr-worm').mouseout(function() {
+  $('.worm').css('visibility', 'hidden');
 });
 
 /* CURSOR CHANGES COLOUR WHEN HOVERED OVER SPECIFIC WORDS*/
