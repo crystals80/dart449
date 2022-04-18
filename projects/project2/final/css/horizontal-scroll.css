@@ -78,8 +78,8 @@ section h2 {
   visibility: hidden;
 }
 
-/* LOBSTER & TUNICATE IMAGES */
-.hover-img {
+/* RESIZE TURTLE DIET IMAGES */
+.hvr-img {
   height: 150px;
 }
 
@@ -177,7 +177,7 @@ section h2 {
   }
 
   /****** CONSERVATION STATUS BUTTONS ******/
-  .endangered-status {
+  .answers {
     position: relative;
     top: 23%;
     left: -25%;
@@ -187,7 +187,7 @@ section h2 {
     align-items: center;
   }
 
-  .endangered-status button {
+  .answers button {
     background: #50E6F750;
     border: 1px solid #00C6C6;
     border-radius: 50px;

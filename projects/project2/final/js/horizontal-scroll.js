@@ -122,10 +122,46 @@ $('.hvr-fish').mouseout(function() {
   $('.fish').css('visibility', 'hidden');
 });
 
+$('.hvr-jellyfish').mouseover(function() {
+  $('.jellyfish').css('visibility', 'visible');
+});
+
+$('.hvr-jellyfish').mouseout(function() {
+  $('.jellyfish').css('visibility', 'hidden');
+});
+
+$('.hvr-crustaceans').mouseover(function() {
+  $('.crustaceans').css('visibility', 'visible');
+});
+
+$('.hvr-crustaceans').mouseout(function() {
+  $('.crustaceans').css('visibility', 'hidden');
+});
+
+$('.hvr-starfish').mouseover(function() {
+  $('.starfish').css('visibility', 'visible');
+});
+
+$('.hvr-starfish').mouseout(function() {
+  $('.starfish').css('visibility', 'hidden');
+});
+
 /* CURSOR CHANGES COLOUR WHEN HOVERED OVER SPECIFIC WORDS*/
 const hvrCursor = document.querySelectorAll('.hvr-cursor');
 
 hvrCursor.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    cursor.classList.add('hover');
+  });
+  item.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover');
+  });
+});
+
+/* CURSOR CHANGES COLOUR WHEN HOVERED OVER BUTTONS*/
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(item => {
   item.addEventListener('mouseover', () => {
     cursor.classList.add('hover');
   });
@@ -218,6 +254,16 @@ $(".correct-3").on("click", function() {
 // When initial message reappears, hide all new texts
 $(".msg1").show(function() {
   $(".msg2, .msg3, msg4, .alert").hide();
+});
+
+/* FINAL QUESTION OF EACH TURTLE PAGE */
+const agree = document.querySelector('#agree-to-help');
+const arrow = document.querySelector('.arrow');
+
+agree.addEventListener('mouseover', function handleMouseOver() {
+  let nextTurtle = setTimeout(function() {
+    arrow.style.opacity = 1;
+  }, 1500);
 });
 
 

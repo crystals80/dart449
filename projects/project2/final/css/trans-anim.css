@@ -87,7 +87,7 @@
 }
 
 /****** ARROW ******/
-#arrow {
+.arrow {
   /* Set dimension */
   width: auto;
   height: 8.5rem;

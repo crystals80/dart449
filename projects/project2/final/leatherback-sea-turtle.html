@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/horizontal-scroll.css">
+    <link rel="stylesheet" href="css/trans-anim.css">
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 
-  <body>
+  <body class="overflow">
 
     <!-- Progress Bar -->
     <header class="header">
@@ -22,18 +26,492 @@
       </div>
     </header>
 
-    <!-- Content -->
-    <main class="wrapper">
+    <!-- Logo -->
+    <header>
+      <div id="logo" style="left: 85%">
+        <a href="index.html"><img src="images/turtle-logo.svg" alt="turtle logo" type="images/svg+xml"></a>
+        <a href="https://www.worldwildlife.org/species/sea-turtle">Save the turtles!</a>
+      </div>
+    </header>
 
-      <footer>
-        <p class="slide-left-slower show-on-scroll">© DLKA 2022 | The Tales of Endangered Sea Turtles</p>
-        <p class="slide-left-slowest show-on-scroll">Design and Computional Arts Faculty of Concordia University</p>
-      </footer>
+    <!-- Content -->
+    <main class="wrapper ground-sea-layer">
+
+      <img id="olive-ridley" src="images/leatherback.svg" alt="leatherback sea turtle">
+
+      <section id="s1">
+        <span class="anim_container">
+          <h1 style="--i: 0">L</h1>
+          <h1 style="--i: 1">e</h1>
+          <h1 style="--i: 2">a</h1>
+          <h1 style="--i: 3">t</h1>
+          <h1 style="--i: 4">h</h1>
+          <h1 style="--i: 5">e</h1>
+          <h1 style="--i: 6">r</h1>
+          <h1 style="--i: 7">b</h1>
+          <h1 style="--i: 8">a</h1>
+          <h1 style="--i: 9">c</h1>
+          <h1 style="--i: 10; margin-right: 2rem">k</h1>
+          <h1 style="--i: 11">S</h1>
+          <h1 style="--i: 12">e</h1>
+          <h1 style="--i: 13; margin-right: 2rem">a</h1>
+          <h1 style="--i: 14">T</h1>
+          <h1 style="--i: 15">u</h1>
+          <h1 style="--i: 16">r</h1>
+          <h1 style="--i: 17">t</h1>
+          <h1 style="--i: 18">l</h1>
+          <h1 style="--i: 19">e</h1>
+          <h1 style="--i: 20">s</h1>
+        </span>
+        <div class="dialog-box typewriter" style="position:fixed; top:20%; left: 5%">
+          <p>Thank you, Oliver. I will be telling you more about my species, the Leatherback sea turtles.</p>
+        </div>
+      </section>
+
+      <section id="s2">
+        <div class="dialog-box following-dialog msg1" style="position:fixed; top:20%; left: 5%">
+          <p style="--i: 0">Being</p>
+          <p style="--i: 1">one</p>
+          <p style="--i: 2">of</p>
+          <p style="--i: 3">the</p>
+          <p style="--i: 4">largest</p>
+          <p style="--i: 5">of</p>
+          <p style="--i: 6">all</p>
+          <p style="--i: 7">seven</p>
+          <p style="--i: 8">living</p>
+          <p style="--i: 9">sea</p>
+          <p style="--i: 10">turtle</p>
+          <p style="--i: 11; margin-right: 0">species</p>
+          <p style="--i: 12;margin-right: 0">.</p>
+          <p style="--i: 13;margin-right: 0">.</p>
+          <p style="--i: 14">.</p>
+        </div>
+
+        <span class="anim_container info">
+          <div class="info-list">
+            <div class="info">
+              <p style="--i: 15">We go by the </p>
+              <h2 style="--i: 16; margin-right: 0;">Scientific Name</h2>
+              <p style="--i: 17">,</p>
+              <p style="--i: 18; margin-right: 0;">Dermochelys coriacea</p>
+              <p style="--i: 19">.</p>
+            </div>
+            <div class="info">
+              <p style="--i: 20">We were</p>
+              <h2 style="--i: 21">named</h2>
+              <p style="--i: 22">after</p>
+              <p style="--i: 23">the properties</p>
+              <p style="--i: 24; margin-right: 0;">of our shell</p>
+              <p style="--i: 25">,</p>
+              <p style="--i: 26">which is</p>
+              <p style="--i: 27">a leather-like</p>
+              <p style="--i: 28">rather</p>
+              <p style="--i: 29">than</p>
+              <p style="--i: 30">hard</p>
+              <p style="--i: 31; margin-right: 0;">shell</p>
+              <p style="--i: 32">.</p>
+            </div>
+            <div class="info">
+              <p style="--i: 33">We can </p>
+              <p style="--i: 34; margin-right: 0;">be found</p>
+              <p style="--i: 35">in</p>
+              <h2 style="--i: 36">tropical</h2>
+              <p style="--i: 37">and</p>
+              <h2 style="--i: 38">temperate</h2>
+              <p style="--i: 39">marine</p>
+              <p style="--i: 40">waters</p>
+              <h2 style="--i: 41">all over</h2>
+              <h2 style="--i: 42; margin-right: 0">the world</h2>
+              <p style="--i: 43">.</p>
+            </div>
+            <div class="info">
+              <p style="--i: 44">We</p>
+              <p style="--i: 45">mostly</p>
+              <p style="--i: 46">love</p>
+              <p style="--i: 47">to feed on</p>
+              <h2 style="--i: 48" class="hvr-cursor hvr-jellyfish">jellyfishes</h2>
+              <p style="--i: 49">but</p>
+              <p style="--i: 50"> we also</p>
+              <p style="--i: 51">like</p>
+              <p style="--i: 52" class="hvr-cursor hvr-algae">seaweed,</p>
+              <p style="--i: 53" class="hvr-cursor hvr-fish">fish,</p>
+              <p style="--i: 54" class="hvr-cursor hvr-crustaceans">crustaceans</p>
+              <p style="--i: 55">and</p>
+              <p style="--i: 56; margin-right: 0" class="hvr-cursor hvr-starfish">other invertebrates</p>
+              <p style="--i: 57">.</p>
+            </div>
+            <!-- <div class="info">
+            </div> -->
+          </div>
+        </span>
+
+        <div class="show-on-hover">
+          <img class="visibility jellyfish" src="images\jellyfish.svg" alt="jellyfish">
+          <img class="visibility algae" src="images\algae.svg" alt="seaweed">
+          <img class="visibility fish" src="images\fish.svg" alt="fish">
+          <img class="visibility hvr-img crustaceans" src="images\crustaceans.svg" alt="crustaceans">
+          <img class="visibility starfish" src="images\starfish.svg" alt="invertebrates">
+        </div>
+      </section>
+
+      <section id="s3">
+        <div class="dialog-box following-dialog msg1" style="position:fixed; top:20%; left: 5%">
+          <p style="--i: 0">Although</p>
+          <p style="--i: 1">our</p>
+          <p style="--i: 2">distribution</p>
+          <p style="--i: 3">is</p>
+          <p style="--i: 4; margin-right: 0">wide</p>
+          <p style="--i: 5">,</p>
+          <p style="--i: 6">we</p>
+          <p style="--i: 7">have</p>
+          <p style="--i: 8">seriously</p>
+          <p style="--i: 9">been</p>
+          <p style="--i: 10">in</p>
+          <p style="--i: 11">decline</p>
+          <p style="--i: 12">during</p>
+          <p style="--i: 13">the</p>
+          <p style="--i: 14">last</p>
+          <p style="--i: 15; margin-right: 0">century</p>
+          <p style="--i: 16; margin-right: 0">.</p>
+          <p style="--i: 17;margin-right: 0">.</p>
+          <p style="--i: 18">.</p>
+        </div>
+
+        <div class="dialog-box following-dialog msg2" style="position:fixed; top:20%; left: 5%; display: none">
+          <p>Correct! The population of Leatherback sea turtles is on decline due to extreme human exploitation!</p>
+        </div>
+
+        <div class="dialog-box following-dialog alert" style="position:fixed; top:20%; left: 5%; display: none">
+          <p>Incorrect...I hopt that will not be the case for us!</p>
+        </div>
+
+        <div style="margin-top: 7rem;">
+          <span class="anim_container" style="margin-bottom: -0.25rem">
+            <div>
+              <h1 style="--i: 19">Do</h1>
+              <h1 style="--i: 20">you</h1>
+              <h1 style="--i: 21">know</h1>
+              <h1 style="--i: 22">about</h1>
+            </div>
+          </span>
+          <span class="anim_container">
+            <div>
+              <h1 style="--i: 23">our</h1>
+              <h1 style="--i: 24">conservation</h1>
+              <h1 style="--i: 25">status</h1>
+              <h1 style="--i: 26">?</h1>
+            </div>
+          </span>
+        </div>
+
+        <div class="answers">
+          <button class="vul correct-1">Vulnerable</button>
+          <button class="end wrong">Endangered</button>
+          <button class="crit-end wrong">Critically Endangered</button>
+        </div>
+      </section>
+
+      <section id="s2">
+        <div class="dialog-box following-dialog msg1" style="position:fixed; top:20%; left: 5%">
+          <p style="--i: 0">Despite</p>
+          <p style="--i: 1">having</p>
+          <p style="--i: 2">the</p>
+          <p style="--i: 3; color: #84FFFF">greatest</p>
+          <p style="--i: 4">migratory</p>
+          <p style="--i: 5">distribution</p>
+          <p style="--i: 6">of</p>
+          <p style="--i: 7">any</p>
+          <p style="--i: 8">reptile</p>
+          <p style="--i: 9">on</p>
+          <p style="--i: 10">the</p>
+          <p style="--i: 11; margin-right: 0;">planet</p>
+          <p style="--i: 12; margin-right: 0;">.</p>
+          <p style="--i: 13; margin-right: 0;">.</p>
+          <p style="--i: 14">.</p>
+        </div>
+
+        <span class="anim_container info">
+          <div class="info-list">
+            <div class="info">
+              <p style="--i: 15">We are</p>
+              <h2 style="--i: 16">vulnerable</h2>
+              <p style="--i: 17">because of</p>
+              <p style="--i: 18">the</p>
+              <p style="--i: 19">many</p>
+              <p style="--i: 20">types</p>
+              <p style="--i: 21">of threats</p>
+              <p style="--i: 22">caused</p>
+              <p style="--i: 23">by</p>
+              <p style="--i: 24">human</p>
+              <p style="--i: 25; margin-right: 0">activities</p>
+              <p style="--i: 26">.</p>
+            </div>
+            <div class="info">
+              <p style="--i: 27">Due to</p>
+              <p style="--i: 28">our</p>
+              <p style="--i: 29">migratory</p>
+              <p style="--i: 30">and</p>
+              <p style="--i: 31">pelagic</p>
+              <p style="--i: 32; margin-right: 0">lifestyle</p>
+              <p style="--i: 33">,</p>
+              <p style="--i: 34">it is</p>
+              <h2 style="--i: 35">extremely</h2>
+              <h2 style="--i: 36">difficult</h2>
+              <p style="--i: 37">to maintain</p>
+              <p style="--i: 38">a safe</p>
+            </div>
+            <div class="info">
+              <p style="--i: 39">journey</p>
+              <p style="--i: 40">to the</p>
+              <h2 style="--i: 41">coastal</h2>
+              <h2 style="--i: 42; margin-right: 0">beaches</h2>
+              <p style="--i: 43">,</p>
+              <p style="--i: 44">when</p>
+              <p style="--i: 45">climate changes</p>
+              <p style="--i: 46">interferes</p>
+              <p style="--i: 47">with</p>
+              <p style="--i: 48">our</p>
+              <p style="--i: 49; margin-right: 0.175rem;">lifestyle</p>
+              <p style="--i: 50">!</p>
+            </div>
+          </div>
+        </span>
+      </section>
+
+      <section id="s3">
+        <div class="dialog-box following-dialog msg1" style="position:fixed; top:20%; left: 5%">
+          <p style="--i: 0; margin-right: 0">Globally</p>
+          <p style="--i: 1">,</p>
+          <p style="--i: 2">Leatherback</p>
+          <p style="--i: 3">populations</p>
+          <p style="--i: 4">are</p>
+          <p style="--i: 5">listed as</p>
+          <p style="--i: 6; color: #84FFFF">vulnerable</p>
+          <p style="--i: 7">but</p>
+          <p style="--i: 8">many</p>
+          <p style="--i: 9">of our</p>
+          <p style="--i: 10">sub-populations</p>
+          <p style="--i: 11">are</p>
+          <p style="--i: 12">listed</p>
+          <p style="--i: 13">as</p>
+          <p style="--i: 14; color: #84FFFF">endangered</p>
+          <p style="--i: 15">and</p>
+          <p style="--i: 16">even</p>
+          <p style="--i: 17; color: #84FFFF">critically</p>
+          <p style="--i: 18; margin-right: 0.125rem; color: #84FFFF">endangered</p>
+          <p style="--i: 19">!</p>
+        </div>
+
+        <div class="dialog-box following-dialog msg2" style="position:fixed; top:20%; left: 5%; display: none">
+          <p>Correct! Our biggest threat are the result of human activities. Our eggs are often illegally poached and so are our skin and flesh!</p>
+        </div>
+
+        <div class="dialog-box following-dialog msg3" style="position:fixed; top:20%; left: 5%; display: none">
+          <p>Correct! We are victims to marine pollution and debris, particularly ingesting plastic marine litter!</p>
+        </div>
+
+        <div class="dialog-box following-dialog msg4" style="position:fixed; top:20%; left: 5%; display: none">
+          <p>Correct! As we reach the surface to breathe, many of us get caught and entangled in fishing gears!</p>
+        </div>
+
+        <div class="dialog-box following-dialog alert" style="position:fixed; top:20%; left: 5%; display: none">
+          <p>Incorrect! Leatherbacks sea turtles have down-pointing spines in our throat preventing jellyfishes from coming out of our mouth!</p>
+        </div>
+
+        <div style="margin-top: 7rem;">
+          <span class="anim_container" style="margin-bottom: -0.25rem">
+            <div>
+              <h1 style="--i: 19">Do</h1>
+              <h1 style="--i: 20">you</h1>
+              <h1 style="--i: 21">know</h1>
+              <h1 style="--i: 22">what</h1>
+              <h1 style="--i: 23">other</h1>
+            </div>
+          </span>
+          <span class="anim_container">
+            <div>
+              <h1 style="--i: 24">threats</h1>
+              <h1 style="--i: 25">are</h1>
+              <h1 style="--i: 26">endangering</h1>
+              <h1 style="--i: 27">us</h1>
+              <h1 style="--i: 28">?</h1>
+            </div>
+          </span>
+        </div>
+
+        <div class="answers" style="left: -31%">
+          <button class="vul correct-2">Marine Pollution</button>
+          <button class="none wrong">Feeding on Jellyfishes</button>
+          <button class="crit-end correct-1">Poaching</button>
+          <button class="end correct-3">Bycatch</button>
+        </div>
+      </section>
+
+      <section id="s2">
+        <div class="dialog-box following-dialog msg1" style="position:fixed; top:20%; left: 5%">
+          <p style="--i: 0">As</p>
+          <p style="--i: 1">storms</p>
+          <p style="--i: 2">frequency</p>
+          <p style="--i: 3">and</p>
+          <p style="--i: 4">intensity</p>
+          <p style="--i: 5; margin-right: 0">increase</p>
+          <p style="--i: 6">,</p>
+          <p style="--i: 7">beach</p>
+          <p style="--i: 8">erosion</p>
+          <p style="--i: 9">is threatening</p>
+          <p style="--i: 10">our</p>
+          <p style="--i: 11">nesting</p>
+          <p style="--i: 12; margin-right: 0">success</p>
+          <p style="--i: 12">.</p>
+          <p style="--i: 13">We</p>
+          <p style="--i: 11">need</p>
+          <p style="--i: 12">your</p>
+          <p style="--i: 14; margin-right: 0.125rem;">help</p>
+          <p style="--i: 15">!</p>
+        </div>
+
+        <span class="anim_container info">
+          <div class="info-list">
+            <div class="info">
+              <p style="--i: 11">You</p>
+              <p style="--i: 12">can</p>
+              <p style="--i: 13">help</p>
+              <p style="--i: 14">our population</p>
+              <p style="--i: 15">by</p>
+              <h2 style="--i: 16">reducing</h2>
+              <h2 style="--i: 17">bycatch</h2>
+              <p style="--i: 18">by</p>
+              <p style="--i: 19">working</p>
+              <p style="--i: 20">with</p>
+              <p style="--i: 21; margin-right: 0">turtle-</p>
+              <p style="--i: 21">friendly</p>
+              <p style="--i: 22">fishing</p>
+              <p style="--i: 23; margin-right: 0">hooks</p>
+              <p style="--i: 24">.</p>
+            </div>
+            <div class="info">
+              <p style="--i: 25; margin-right: 0">Right now</p>
+              <p style="--i: 26">,</p>
+              <p style="--i: 27">there are</p>
+              <p style="--i: 28">efforts</p>
+              <p style="--i: 29">being</p>
+              <p style="--i: 30">done</p>
+              <h2 style="--i: 31">spreading</h2>
+              <h2 style="--i: 32">awareness</h2>
+              <p style="--i: 33">about</p>
+              <h2 style="--i: 34">addressing</h2>
+              <h2 style="--i: 35; margin-right: 0">overharvesting</h2>
+              <p style="--i: 36">.</p>
+            </div>
+            <div class="info">
+              <h2 style="--i: 37;">Marine</h2>
+              <h2 style="--i: 38">protected</h2>
+              <h2 style="--i: 39">areas</h2>
+              <p style="--i: 40">are</p>
+              <p style="--i: 41">being</p>
+              <p style="--i: 42">established</p>
+              <p style="--i: 43">to ensure</p>
+              <p style="--i: 44">marine</p>
+              <p style="--i: 45">turtles</p>
+              <p style="--i: 46">have</p>
+              <p style="--i: 47">a safe</p>
+              <p style="--i: 48">place</p>
+              <p style="--i: 49;margin-right: 0">to nest</p>
+              <p style="--i: 50">,</p>
+            </div>
+            <div class="info">
+              <p style="--i: 51">feed</p>
+              <p style="--i: 52">and</p>
+              <p style="--i: 53">migrate</p>
+              <p style="--i: 54; margin-right: 0">freely</p>
+              <p style="--i: 55">.</p>
+              <h2 style="--i: 56">Satellite</h2>
+              <h2 style="--i: 57">tracking</h2>
+              <p style="--i: 58">is another</p>
+              <p style="--i: 59">solution</p>
+              <p style="--i: 60">to help</p>
+              <p style="--i: 61">our</p>
+              <p style="--i: 62">migration</p>
+              <p style="--i: 63">journey</p>
+              <p style="--i: 64">and</p>
+            </div>
+            <div class="info">
+              <p style="--i: 65">it</p>
+              <p style="--i: 66">does not</p>
+              <p style="--i: 67">harm</p>
+              <p style="--i: 68; margin-right: 0">our species</p>
+              <p style="--i: 69">.</p>
+            </div>
+          </div>
+        </span>
+      </section>
+
+      <section id="s1">
+        <div class="dialog-box following-dialog msg1" style="position:fixed; top:20%; left: 5%">
+          <p style="--i: 0">It</p>
+          <p style="--i: 1">would</p>
+          <p style="--i: 2">be</p>
+          <p style="--i: 3">really</p>
+          <p style="--i: 4">delightful</p>
+          <p style="--i: 5">if</p>
+          <p style="--i: 6">we</p>
+          <p style="--i: 7">can</p>
+          <p style="--i: 8; color: #84FFFF">co-exist</p>
+          <p style="--i: 9; color: #84FFFF; margin-right: 0;">together</p>
+          <p style="--i: 10; margin-right: 0">.</p>
+          <p style="--i: 11; margin-right: 0">.</p>
+          <p style="--i: 12; margin-right: 0">.</p>
+          <p style="--i: 13">Would</p>
+          <p style="--i: 14">you</p>
+          <p style="--i: 15">like</p>
+          <p style="--i: 16">to help</p>
+          <p style="--i: 17; margin-right: 0.125rem;">us</p>
+          <p style="--i: 18">?</p>
+        </div>
+
+        <div class="dialog-box following-dialog msg2" style="position:fixed; top:20%; left: 5%; display: none">
+          <p>That is a very pleasant response. Thank you for thinking about our safety.</p>
+        </div>
+
+        <div class="dialog-box following-dialog alert" style="position:fixed; top:20%; left: 5%; display: none">
+          <p>Ah...That is a shame. We could learn so much from each other.</p>
+        </div>
+
+        <div style="margin-top: 7rem;">
+          <span class="anim_container" style="margin-bottom: -0.25rem">
+            <div>
+              <h1 style="--i: 19">Will</h1>
+              <h1 style="--i: 20">you</h1>
+              <h1 style="--i: 21">help</h1>
+              <h1 style="--i: 22">us</h1>
+              <h1 style="--i: 23">out</h1>
+              <h1 style="--i: 24">?</h1>
+            </div>
+          </span>
+        </div>
+
+        <div class="answers" style="top:26%; left: -11%">
+          <button class="vul correct-1" id="agree-to-help">Yes!</button>
+          <button class="end wrong">No...</button>
+        </div>
+
+        <div class="next-turtle">
+          <a href="green-sea-turtle.html"><img class="arrow" src="images/arrow-left.svg" alt="arrow"></a>
+        </div>
+
+      </section>
 
     </main>
 
-    <!-- JS script(s) -->
-    <script src="js/show-on-scroll.js"></script>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- JS scripts -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/horizontal-scroll.js"></script>
 
   </body>
 
