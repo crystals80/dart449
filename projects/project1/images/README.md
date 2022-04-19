@@ -28,6 +28,7 @@ Images found with Google Image
 <br>
 [sky-wallpapercave.jpg](https://wallpapercave.com/w/wp3436956) — Unknown Artist
 [hockey-arena.jpg](https://scapromotions.com/home/hockey-stadium-with-spectators-and-an-empty-ice-rink/) — Unknown Artist
+[copy-transform-combine.jpg](https://www.iamag.co/everything-is-a-remix-the-force-awakens/) - Kirby Ferguson
 [the-social-dilemma.jpg](https://m.imdb.com/title/tt11464826/mediaviewer/rm3501893121/) – The Social Dilemma on IMDB
 <br>
 <br>
@@ -40,4 +41,4 @@ Images from reading articles
 My Images
 <br>
 <br>
-"screenshot-1.jpg" is a screenshot from one of my previous codes
+"screenshot-1.jpg" and "screenshot-2.jpg" are screenshots from one of my previous codes, while "screenshot-3.jpg" and "screenshot-4.jpg" are screenshots of my final project.
