@@ -86,8 +86,8 @@
   }
 }
 
-/****** ARROW ******/
-.arrow {
+/****** LANDING PAGE ARROW ******/
+#arrow {
   /* Set dimension */
   width: auto;
   height: 8.5rem;
@@ -96,6 +96,27 @@
   top: 38.5%;
   left: 141.75%;
   transform: translate(-50%, -50%);
+  z-index: 50;
+  /* Set transition */
+  opacity: 0;
+  transition: all 2s cubic-bezier(0, .55, .75, 1.29);
+  /* -webkit-animation: slide-in-blurred-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  animation: slide-in-blurred-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both; */
+  -webkit-animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s infinite both;
+  animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s infinite both;
+}
+
+/****** TURTLE PAGE ARROW ******/
+.arrow {
+  /* Set dimension */
+  width: auto;
+  height: 3.75rem;
+  /* Set position */
+  position: absolute;
+  top: 50%;
+  left: 94%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
   /* Set transition */
   opacity: 0;
   transition: all 2s cubic-bezier(0, .55, .75, 1.29);
