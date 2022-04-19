@@ -127,6 +127,7 @@ button {
   left: 0;
   top: 0;
   transform: translate(calc(-50% + 15px), -50%);
+  z-index: 200;
 }
 
 .cursor2 {
@@ -137,6 +138,7 @@ button {
   opacity: .3;
   position: fixed;
   transform: translate(-50%, -50%);
+  z-index: 200;
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
 }
