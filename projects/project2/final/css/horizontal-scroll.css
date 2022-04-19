@@ -35,19 +35,19 @@ Taken from CSS Gradient
 }
 
 .leatherback h1 {
-  background: -webkit-linear-gradient(286deg, #F0EFEA, #141414);
+  background: -webkit-linear-gradient(-90deg, #F0EFEA, #141414);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green h1 {
-  background: -webkit-linear-gradient(288deg, #FFF2DD, #2C1E07);
+  background: -webkit-linear-gradient(-90deg, #FFF2DD, #2C1E07);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hawksbill h1 {
-  background: -webkit-linear-gradient(76deg, #FFE5BF, #C47300);
+  background: -webkit-linear-gradient(-90deg, #FFE5BF, #C47300);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
