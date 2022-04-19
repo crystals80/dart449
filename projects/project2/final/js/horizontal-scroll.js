@@ -170,6 +170,30 @@ $('.hvr-worm').mouseout(function() {
   $('.worm').css('visibility', 'hidden');
 });
 
+$('.hvr-sea-urchin').mouseover(function() {
+  $('.sea-urchin').css('visibility', 'visible');
+});
+
+$('.hvr-sea-urchin').mouseout(function() {
+  $('.sea-urchin').css('visibility', 'hidden');
+});
+
+$('.hvr-barnacle').mouseover(function() {
+  $('.barnacle').css('visibility', 'visible');
+});
+
+$('.hvr-barnacle').mouseout(function() {
+  $('.barnacle').css('visibility', 'hidden');
+});
+
+$('.hvr-sponge').mouseover(function() {
+  $('.sponge').css('visibility', 'visible');
+});
+
+$('.hvr-sponge').mouseout(function() {
+  $('.sponge').css('visibility', 'hidden');
+});
+
 /* CURSOR CHANGES COLOUR WHEN HOVERED OVER SPECIFIC WORDS*/
 const hvrCursor = document.querySelectorAll('.hvr-cursor');
 

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: #ffce71;
+      }
+
+      .cls-1 {
+        stroke: #ffce71;
+      }
+
+      .cls-1, .cls-2, .cls-6 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fce3a0;
+        stroke: #fce3a0;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        fill: #ffb357;
+      }
+
+      .cls-6 {
+        stroke: #ffb357;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M83.225,2.184c0.881,1.449-4.141,4.763-3.932,9.842,0.114,2.756,1.5,5.381,3.932,7.874v3.937c0,20.351.27,49.865,0,60.037-0.092,3.473-.087,7.1,0,10.826a123.432,123.432,0,0,0,.983,14.763c2.108,12.137,8.668,23.057,18.675,32.479-9.172,6.052-20.747,8.488-31.453,4.921C56.584,141.916,45.9,126.1,46.858,107.494a39.136,39.136,0,0,1-23.589-3.936C11.64,97.481,5.891,85.871,3.611,77.968c-1.734-6.009-1.278-10.156,0-12.795A14.06,14.06,0,0,1,15.406,57.3c3.327-.076,8.454,1.94,13.76,8.858,5.028,6.555,5.205,13.487,11.795,20.668,0.63,0.687,1.281,1.338,1.966,1.968-0.273-3.33-.595-6.556-0.983-9.842-1.809-15.3-4.55-25.665-1.966-38.384a51.086,51.086,0,0,1,6.88-17.716C58.719,4.84,81.5-.661,83.225,2.184Z"/>
+    <path class="cls-1" d="M122.541,87.81l-8.847,40.353a31.419,31.419,0,0,0,8.847-.984,32.9,32.9,0,0,0,11.794-5.906,37.873,37.873,0,0,0,12.778-18.7c1.649-5.1,1.66-9.115.983-11.81-0.848-3.374-2.665-7.037-5.9-8.858C137,78.974,128.765,80.746,122.541,87.81Z"/>
+    <path class="cls-2" d="M84.208,19.9a11.707,11.707,0,0,1-3.932-6.889A12.146,12.146,0,0,1,84.208,2.184q1.47-.072,2.949,0C103.878,3,116.876,17.316,122.541,27.773c9.465,17.473,5.094,35.382,0,58.069-3.2,14.254-6.1,28.48-8.847,43.305a37.93,37.93,0,0,1-5.9,8.858,37.519,37.519,0,0,1-2.949,2.953,45.67,45.67,0,0,1-4.914-3.937c-7.347-6.773-13.839-17.243-14.743-29.527a40.2,40.2,0,0,1,0-5.905Q84.7,60.744,84.208,19.9Z"/>
+  </g>
+  <g>
+    <path class="cls-3" d="M83.225,19.9A14.763,14.763,0,1,1,68.482,34.663,14.753,14.753,0,0,1,83.225,19.9Z"/>
+    <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-4" cx="90.797" cy="13.297" r="1.922"/>
+    <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-4" cx="111.453" cy="88.094" r="1.922"/>
+    <circle id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-4" cx="132.078" cy="111.719" r="1.922"/>
+    <circle id="Ellipse_1_copy_4" data-name="Ellipse 1 copy 4" class="cls-4" cx="89.828" cy="135.344" r="1.922"/>
+    <path id="Ellipse_1_copy_5" data-name="Ellipse 1 copy 5" class="cls-3" d="M36.742,95.028a1.927,1.927,0,1,1-1.925,1.927A1.926,1.926,0,0,1,36.742,95.028Z"/>
+    <path id="Ellipse_1_copy_11" data-name="Ellipse 1 copy 11" class="cls-3" d="M54.434,32.038a1.927,1.927,0,1,1-1.925,1.928A1.926,1.926,0,0,1,54.434,32.038Z"/>
+    <circle id="Ellipse_1_copy_6" data-name="Ellipse 1 copy 6" class="cls-4" cx="60.328" cy="111.719" r="1.922"/>
+    <circle id="Ellipse_1_copy_7" data-name="Ellipse 1 copy 7" class="cls-4" cx="68.891" cy="130.094" r="4.141"/>
+    <circle id="Ellipse_1_copy_8" data-name="Ellipse 1 copy 8" class="cls-4" cx="23.703" cy="90.734" r="4.141"/>
+    <circle id="Ellipse_1_copy_9" data-name="Ellipse 1 copy 9" class="cls-4" cx="74.797" cy="97.609" r="4.141"/>
+    <circle id="Ellipse_1_copy_10" data-name="Ellipse 1 copy 10" class="cls-4" cx="54.172" cy="55.297" r="4.141"/>
+    <circle id="Ellipse_1_copy_12" data-name="Ellipse 1 copy 12" class="cls-5" cx="101.328" cy="115.328" r="4.141"/>
+    <circle id="Ellipse_1_copy_13" data-name="Ellipse 1 copy 13" class="cls-5" cx="113.141" cy="58.25" r="4.141"/>
+    <circle id="Ellipse_1_copy_14" data-name="Ellipse 1 copy 14" class="cls-5" cx="110.172" cy="31.672" r="4.14"/>
+    <path id="Line_1" data-name="Line 1" class="cls-6" d="M12.457,69.11l6.88,5.905Zm6.88,0-6.88,5.905Z"/>
+    <path id="Line_1_copy" data-name="Line 1 copy" class="cls-6" d="M132.369,91.747l5.9,5.905Zm5.9,0-5.9,5.905Z"/>
+  </g>
+</svg>
