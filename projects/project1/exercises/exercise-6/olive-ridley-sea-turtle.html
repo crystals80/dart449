@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="scrollbar">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Tales of Olive Ridley Sea Turtles</title>
+
+    <!-- CSS stylesheet(s) -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/horizontal-scroll.css">
+    <link rel="stylesheet" href="css/trans-anim.css">
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+
+  <body class="overflow">
+
+    <!-- Progress Bar -->
+    <header class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </header>
+
+    <!-- Logo -->
+    <header>
+      <div id="logo" style="left: 85%">
+        <a href="index.html"><img src="images/turtle-logo.svg" alt="turtle logo" type="images/svg+xml"></a>
+        <a href="https://www.worldwildlife.org/species/sea-turtle">Save the turtles!</a>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="wrapper ground-sea-layer">
+
+      <img id="olive-ridley" src="images/olive-ridley.svg" alt="olive ridley turtle">
+
+      <section id="s1">
+        <span class="anim_container">
+          <h1 style="--i: 0">O</h1>
+          <h1 style="--i: 1">l</h1>
+          <h1 style="--i: 2">i</h1>
+          <h1 style="--i: 3">v</h1>
+          <h1 style="--i: 4; margin-right: 2rem">e</h1>
+          <h1 style="--i: 5">R</h1>
+          <h1 style="--i: 6">i</h1>
+          <h1 style="--i: 7">d</h1>
+          <h1 style="--i: 8">l</h1>
+          <h1 style="--i: 9">e</h1>
+          <h1 style="--i: 10; margin-right: 2rem">y</h1>
+          <h1 style="--i: 11">S</h1>
+          <h1 style="--i: 12">e</h1>
+          <h1 style="--i: 13; margin-right: 2rem">a</h1>
+          <h1 style="--i: 14">T</h1>
+          <h1 style="--i: 15">u</h1>
+          <h1 style="--i: 16">r</h1>
+          <h1 style="--i: 17">t</h1>
+          <h1 style="--i: 18">l</h1>
+          <h1 style="--i: 19">e</h1>
+          <h1 style="--i: 20">s</h1>
+        </span>
+        <div class="dialog-box typewriter" style="position:fixed; top:20%; left: 5%">
+          <p>Hello, I represent the Olive Ridley turtles and I will be your turtle guide!</p>
+        </div>
+      </section>
+
+      <section id="s2">
+        <div class="dialog-box following-dialog msg1" style="position:fixed; top:20%; left: 5%">
+          <p style="--i: 0">Let</p>
+          <p style="--i: 1">me</p>
+          <p style="--i: 2">tell</p>
+          <p style="--i: 3">you</p>
+          <p style="--i: 4">a bit</p>
+          <p style="--i: 5">about</p>
+          <p style="--i: 6; margin-right: 0;">us</p>
+          <p style="--i: 7">!</p>
+          <!-- <p style="--i: 8">,</p>
+          <p style="--i: 9">Green</p>
+          <p style="--i: 10">Sea</p>
+          <p style="--i: 11">turtles</p>
+          <p style="--i: 12">but</p>
+          <p style="--i: 13">my</p>
+          <p style="--i: 14">family</p>
+          <p style="--i: 15">is</p>
+          <p style="--i: 16">in</p>
+          <p style="--i: 17; margin-right: 0;">danger</p>
+          <p style="--i: 18">!</p> -->
+        </div>
+
+        <span class="anim_container info">
+          <div class="info-list">
+            <div class="info">
+              <p style="--i: 8">We go by the </p>
+              <h2 style="--i: 9">Scientific Name</h2>
+              <p style="--i: 10">,</p>
+              <p style="--i: 11">Lepidochelys olivacea</p>
+            </div>
+            <div class="info">
+              <p style="--i: 12">About our</p>
+              <h2 style="--i: 13">Habitat</h2>
+              <p style="--i: 14">,</p>
+              <p style="--i: 15">we live in</p>
+              <p style="--i: 16">tropical regions of</p>
+              <p style="--i: 17">the Pacific</p>
+              <p style="--i: 18">,</p>
+              <p style="--i: 19">Atlantic</p>
+              <p style="--i: 20">and Indian Oceans</p>
+            </div>
+            <div class="info">
+              <p style="--i: 21">We are</p>
+              <h2 style="--i: 22">omnivorous</h2>
+              <p style="--i: 23">,</p>
+              <p style="--i: 24">meaning that</p>
+              <p style="--i: 25">we feed on</p>
+              <p style="--i: 26">both plants</p>
+              <p style="--i: 27; margin-right: 0;">and animals</p>
+              <p style="--i: 28">,</p>
+            </div>
+            <div class="info">
+              <p style="--i: 29" class="hover-algae">like algae,</p>
+              <p style="--i: 30" class="hover-lobster">lobsters,</p>
+              <p style="--i: 31" class="hover-crab">crabs,</p>
+              <p style="--i: 32" class="hover-tunicate">tunicates,</p>
+              <p style="--i: 33" class="hover-mollusk">mollusks,</p>
+              <p style="--i: 34" class="hover-shrimp">shrimps</p>
+              <p style="--i: 35" class="hover-fish">and fishes</p>
+            </div>
+          </div>
+        </span>
+
+        <div class="show-on-hover">
+          <img class="visibility algae" src="images\algae.svg" alt="algae">
+          <img class="visibility hover-img lobster" src="images\lobster.svg" alt="lobster">
+          <img class="visibility crab" src="images\crab.svg" alt="crab">
+          <img class="visibility hover-img tunicate" src="images\tunicate.svg" alt="tunicates">
+          <img class="visibility mollusk" src="images\mollusk.svg" alt="mollusk">
+          <img class="visibility shrimp" src="images\shrimp.svg" alt="shrimp">
+          <img class="visibility fish" src="images\fish.svg" alt="fish">
+        </div>
+      </section>
+
+      <section id="s3">
+        <div class="dialog-box following-dialog msg1" style="position:fixed; top:20%; left: 5%">
+          <p style="--i: 0">We</p>
+          <p style="--i: 1">are</p>
+          <p style="--i: 2">a bit</p>
+          <p style="--i: 3">less</p>
+          <p style="--i: 4">known</p>
+          <p style="--i: 5">than</p>
+          <p style="--i: 6">our</p>
+          <p style="--i: 7; margin-right: 0;">cousins</p>
+          <p style="--i: 8">,</p>
+          <p style="--i: 9">Green</p>
+          <p style="--i: 10">Sea</p>
+          <p style="--i: 11">turtles</p>
+          <p style="--i: 12">but</p>
+          <p style="--i: 13">my</p>
+          <p style="--i: 14">family</p>
+          <p style="--i: 15">is</p>
+          <p style="--i: 16">in</p>
+          <p style="--i: 17; margin-right: 0;">danger</p>
+          <p style="--i: 18">!</p>
+        </div>
+
+        <div class="dialog-box following-dialog msg2" style="position:fixed; top:20%; left: 5%; display: none">
+          <p style="--i: 0">That</p>
+          <p style="--i: 1">is</p>
+          <p style="--i: 2; margin-right: 0;">right</p>
+          <p style="--i: 3">!</p>
+          <p style="--i: 4">The</p>
+          <p style="--i: 5">population</p>
+          <p style="--i: 6">of</p>
+          <p style="--i: 7">Olive</p>
+          <p style="--i: 8">Ridley</p>
+          <p style="--i: 9">sea</p>
+          <p style="--i: 10">turtles</p>
+          <p style="--i: 11">is</p>
+          <p style="--i: 12">on</p>
+          <p style="--i: 13">decline</p>
+          <p style="--i: 14">due</p>
+          <p style="--i: 15">to</p>
+          <p style="--i: 16">human</p>
+          <p style="--i: 17; margin-right: 0;">exploitation</p>
+          <p style="--i: 18">!</p>
+        </div>
+
+        <div style="margin-top: 7rem;">
+          <span class="anim_container" style="margin-bottom: -0.25rem">
+            <div>
+              <h1 style="--i: 19">Do</h1>
+              <h1 style="--i: 20">you</h1>
+              <h1 style="--i: 21">know</h1>
+              <h1 style="--i: 22">about</h1>
+            </div>
+          </span>
+          <span class="anim_container">
+            <div>
+              <h1 style="--i: 23">our</h1>
+              <h1 style="--i: 24">conservation</h1>
+              <h1 style="--i: 25">status</h1>
+              <h1 style="--i: 26">?</h1>
+            </div>
+          </span>
+        </div>
+
+        <div class="endangered-status">
+          <button class="vul correct">Vulnerable</button>
+          <button class="end wrong">Endangered</button>
+          <button class="crit-end wrong">Critically Endangered</button>
+        </div>
+
+      </section>
+
+      <section id="s4">
+        <span class="anim_container">
+          <h1>Thank you for your time!</h1>
+        </span>
+      </section>
+
+    </main>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- JS scripts -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/horizontal-scroll.js"></script>
+
+  </body>
+
+</html>
